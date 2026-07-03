@@ -1,0 +1,48 @@
+name: Supportticket
+description: Vraag hulp voor een technisch probleem.
+title: "[Support] "
+labels: ["support"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Waar treedt het probleem op?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actuele situatie
+      description: Wat gebeurt er nu?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Verwachte situatie
+      description: Wat had er moeten gebeuren?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: Reeds getest
+      description: Welke analyses, logs of commando's hebben jullie al uitgevoerd?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validatie na oplossing
+      description: Hoe bewijzen jullie dat het opgelost is?
+    validations:
+      required: true
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentatie-impact
+      description: Welke documentatie moet worden bijgewerkt?
+    validations:
+      required: true
+

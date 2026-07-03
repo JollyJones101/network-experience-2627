@@ -1,0 +1,55 @@
+name: Change request
+description: Vraag een risicovolle of impactvolle wijziging aan.
+title: "[Change] "
+labels: ["change"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Doel
+      description: Waarom is deze wijziging nodig?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Wat wordt aangepast?
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risico-inschatting
+      description: Welke risico's zijn er?
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Uitvoeringsplan
+      description: Welke stappen voeren jullie uit?
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollbackplan
+      description: Hoe draaien jullie veilig terug?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validatie
+      description: Hoe controleren jullie dat de wijziging correct is?
+    validations:
+      required: true
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentatie-impact
+      description: Welke documentatie wordt bijgewerkt?
+    validations:
+      required: true
+

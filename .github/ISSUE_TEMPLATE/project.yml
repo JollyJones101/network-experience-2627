@@ -1,0 +1,42 @@
+name: Projecttaak
+description: Plan en volg een gewone projecttaak op.
+title: "[Project] "
+labels: ["chore"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Wat moet er gebeuren en waarom?
+      placeholder: Beschrijf de taak.
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Stappenplan
+      placeholder: Welke stappen voeren jullie uit?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Verwachte uitkomst
+      placeholder: Wanneer is dit klaar?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Test of validatie
+      placeholder: Hoe controleren jullie dat het werkt?
+    validations:
+      required: true
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentatie
+      placeholder: Welke bestanden worden bijgewerkt?
+    validations:
+      required: true
+

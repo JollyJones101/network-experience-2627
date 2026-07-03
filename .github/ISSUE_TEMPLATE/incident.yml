@@ -1,0 +1,55 @@
+name: Incident
+description: Registreer een storing, fout of securityprobleem.
+title: "[Incident] "
+labels: ["incident"]
+body:
+  - type: textarea
+    id: detection
+    attributes:
+      label: Detectie
+      description: Hoe is het incident opgemerkt?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Welke systemen, services of gebruikers zijn getroffen?
+    validations:
+      required: true
+  - type: textarea
+    id: cause
+    attributes:
+      label: Vermoedelijke oorzaak
+      description: Wat is de vermoedelijke of bewezen oorzaak?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Tijdelijke oplossing
+      description: Hoe beperken jullie de impact?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Definitieve oplossing
+      description: Welke fix is uitgevoerd of gepland?
+    validations:
+      required: true
+  - type: textarea
+    id: prevention
+    attributes:
+      label: Preventie
+      description: Hoe vermijden jullie herhaling?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Test of validatie
+      description: Hoe is herstel aangetoond?
+    validations:
+      required: true
+

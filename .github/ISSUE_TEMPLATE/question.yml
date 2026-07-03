@@ -1,0 +1,33 @@
+name: Vraag
+description: Stel een inhoudelijke of praktische vraag.
+title: "[Vraag] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Waarover gaat de vraag?
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Vraag
+      description: Formuleer zo concreet mogelijk.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: Wat hebben jullie al opgezocht of getest?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Wat blokkeert deze vraag?
+    validations:
+      required: true
+
