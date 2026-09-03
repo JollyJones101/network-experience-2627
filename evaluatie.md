@@ -36,6 +36,7 @@ De evaluatie kijkt expliciet naar:
 - VPN;
 - back-up/restore-test;
 - monitoring en logging;
+- Minecraft-server met veilige toegang, BlueMap, hub, optimalisatie, rechtenbeheer en overdracht;
 - incident of change request;
 - documentatie en bewijsvoering;
 - respecteren van de RAM- en labo-beperkingen.
@@ -43,4 +44,3 @@ De evaluatie kijkt expliciet naar:
 ## Individuele bijdrage
 
 Groepswerk betekent niet dat iedereen automatisch dezelfde beoordeling krijgt. De docent kan individuele vragen stellen over configuraties, keuzes, issues, commits en documentatie. Iedereen moet de eigen bijdrage kunnen uitleggen.
-

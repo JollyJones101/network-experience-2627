@@ -19,6 +19,7 @@ Elke groep demonstreert minstens:
 11. back-up/restore-test;
 12. technische documentatie en changelog;
 13. incident of change request met correcte opvolging.
+14. Minecraft-server: veilige spelersconnectie, beschermde hub, BlueMap volgens het gekozen publicatiemodel, rollenbewijs en restore-test.
 
 ## Documenten die klaar moeten zijn
 
@@ -32,6 +33,7 @@ Elke groep demonstreert minstens:
 - [docs/16-proxmox-firewall-security-groups.md](docs/16-proxmox-firewall-security-groups.md)
 - [docs/17-high-availability.md](docs/17-high-availability.md)
 - [docs/18-vpn.md](docs/18-vpn.md)
+- [docs/19-minecraft-server.md](docs/19-minecraft-server.md)
 - [changelog.md](changelog.md)
 
 ## Presentatie
@@ -46,4 +48,3 @@ Gebruik een korte, technische structuur:
 6. beperkingen en verbeterpunten.
 
 Iedere student moet technische vragen over de eigen bijdrage kunnen beantwoorden.
-

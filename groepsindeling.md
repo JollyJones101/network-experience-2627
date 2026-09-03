@@ -33,4 +33,14 @@ Vul dit bestand in voor jullie groep.
 | Webshare | `<HOST>` | `<NETWERK>` | `<LINK>` |
 | n8n | `<HOST>` | `<NETWERK>` | `<LINK>` |
 | Monitoring | `<HOST>` | `<NETWERK>` | `<LINK>` |
+| Minecraft-server | `<HOST>` | `<NETWERK>` | [Minecraft-opdracht](docs/19-minecraft-server.md) |
 
+## Minecraft: eigenaarschap en back-up
+
+| Onderdeel | Eigenaar | Back-up | Opmerking |
+|---|---|---|---|
+| Platform en back-up | `<NAAM>` | `<NAAM>` |  |
+| Netwerk en security | `<NAAM>` | `<NAAM>` |  |
+| Hub en werelden | `<NAAM>` | `<NAAM>` |  |
+| Moderatie en regels | `<NAAM>` | `<NAAM>` |  |
+| BlueMap en monitoring | `<NAAM>` | `<NAAM>` |  |

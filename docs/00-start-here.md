@@ -20,6 +20,7 @@ Lees in deze volgorde:
 - Maak issues aan voor de eerste taken.
 - Spreek af wie welke documentatie bijhoudt.
 - Richt Bitwarden of een goedgekeurd alternatief in voor gedeelde secrets.
+- Lees [de Minecraft-serveropdracht](19-minecraft-server.md) en maak de eerste issues voor eigenaarschap, netwerkontwerp en de hub.
 
 ## Gegevens van de docent
 
@@ -55,4 +56,4 @@ Plaats deze gegevens alleen in de repo als ze geen secrets bevatten.
 - [ ] Eerste netwerkdiagram gestart.
 - [ ] Bitwarden-vault of alternatief ingericht.
 - [ ] Geen secrets in GitHub.
-
+- [ ] Eerste Minecraft-rollen en back-ups aangeduid.

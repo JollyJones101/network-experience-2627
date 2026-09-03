@@ -61,6 +61,7 @@ Elke groep realiseert, documenteert, test en verdedigt minstens:
 - VPN-toegang tot de interne beheeromgeving;
 - back-up en restore-test;
 - monitoring, logging, incidenten en change management.
+- een duurzame Minecraft-server voor de opleiding met BlueMap, een beschermde hub, rolverdeling, optimalisatie en overdracht: zie [docs/19-minecraft-server.md](docs/19-minecraft-server.md).
 
 De omgeving is beperkt: reken op drie virtuele Proxmox-nodes met ongeveer 8 GB RAM per node. Kies dus bewust voor lichte VM's, LXC-containers of Docker-containers. Zware enterprise-stacks zijn alleen verdedigbaar als je resource-impact correct aantoont.
 
@@ -98,4 +99,3 @@ Plaats nooit wachtwoorden, tokens, private keys, certificaatsleutels, recovery c
 <SECRET_IN_BITWARDEN>
 <GROUP_VAULT_ITEM>
 ```
-

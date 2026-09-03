@@ -7,6 +7,7 @@ Elke service moet bewust gekozen, licht genoeg en professioneel gedocumenteerd z
 - webshare: zie [14-webshare.md](14-webshare.md);
 - n8n: zie [15-n8n-automatisatie.md](15-n8n-automatisatie.md);
 - monitoring/logging: zie [08-monitoring-en-logging.md](08-monitoring-en-logging.md).
+- Minecraft-server voor de opleiding: zie [19-minecraft-server.md](19-minecraft-server.md).
 
 ## Mogelijke extra services
 
@@ -20,6 +21,10 @@ Elke service moet bewust gekozen, licht genoeg en professioneel gedocumenteerd z
 - Ansible voor beperkte automatisatie;
 - licht back-upscript met cron/systemd timer;
 - lichte syslog-oplossing.
+
+## Minecraft-server
+
+De Minecraft-server is een verplichte, langlopende opleidingsservice. De volledige opdracht, inclusief BlueMap, hub, security, rollen, optimalisatie en overdracht, staat in [19-minecraft-server.md](19-minecraft-server.md). Houd de installatie licht en plan het resourcegebruik naast de andere verplichte services.
 
 ## Vermijd zware keuzes
 
@@ -45,4 +50,3 @@ Gebruik [templates/service-template.md](templates/service-template.md). Beschrij
 - monitoring;
 - testprocedure;
 - rollback.
-
