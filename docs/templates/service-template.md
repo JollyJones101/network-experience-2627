@@ -27,7 +27,7 @@ Beschrijf instellingen zonder secrets.
 ## Netwerkpad
 
 ```text
-Client -> OPNsense/VPN -> <SERVICE>
+Client -> bestaande VPN/reverse proxy -> OPNsense -> <SERVICE>
 ```
 
 ## Firewallregels
@@ -53,4 +53,3 @@ Client -> OPNsense/VPN -> <SERVICE>
 - [ ] Authenticatie getest.
 - [ ] Ongewenste toegang geblokkeerd.
 - [ ] Backup of export getest.
-

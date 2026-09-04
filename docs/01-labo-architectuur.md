@@ -19,8 +19,8 @@ Fysieke Proxmoxcluster opleiding
 |---|---|---|
 | Fysieke Proxmoxcluster | Docent/opleiding | Draait alle groepsomgevingen |
 | Doos-Proxmox | Docent | Bevat de virtuele labocomponenten van een groep |
-| OPNsense | Studenten | Edge firewall, router, NAT, VPN |
-| Virtuele Proxmox-nodes | Studenten | Cluster voor VM's, containers, SDN, HA en firewall |
+| OPNsense | Opleiding; studenten binnen changeproces | Edge firewall, router, NAT, VPN |
+| Virtuele Proxmox-nodes | Opleiding voor basis; studenten voor eigen workloads | Werkend cluster voor VM's, containers, SDN, HA en firewall |
 | VM's/containers | Studenten | Services en testomgevingen |
 
 Studenten krijgen geen beheerrechten op de doos-Proxmox. Dat voorkomt dat groepen de onderliggende bekabeling aanpassen of OPNsense bypassen.
@@ -63,13 +63,16 @@ Maak onderscheid tussen:
 
 Proxmox SDN is een laag binnen jullie eigen cluster. Het vervangt niet de verplichte OPNsense-afscherming.
 
-## Bewijs dat alles achter OPNsense zit
+## Bestaande platformdiensten
+
+Bij de start zijn de Proxmox-basisomgeving, automatische backups, reverse proxy, VPN, SSO en NetBox operationeel. Studenten bouwen deze niet opnieuw. Ze valideren de relevante paden voor hun workloads en gebruiken support- en changeprocedures wanneer de basis afwijkt of aangepast moet worden.
+
+## Validatie van het verkeerspad
 
 Documenteer minstens:
 
 - default gateway van de Proxmox-nodes;
 - traceroute of route-output;
-- OPNsense firewall/NAT-regels;
+- relevante OPNsense firewall/NAT-regels of een door de opleiding aangeleverd overzicht;
 - test vanaf WAN/klaslokaalnetwerk naar een gepubliceerde service;
 - screenshot of export zonder secrets.
-

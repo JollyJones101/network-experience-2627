@@ -30,17 +30,13 @@ Vul dit bestand in voor jullie groep.
 
 | Service | Host | Netwerk | Documentatie |
 |---|---|---|---|
-| Webshare | `<HOST>` | `<NETWERK>` | `<LINK>` |
-| n8n | `<HOST>` | `<NETWERK>` | `<LINK>` |
-| Monitoring | `<HOST>` | `<NETWERK>` | `<LINK>` |
-| Minecraft-server | `<HOST>` | `<NETWERK>` | [Minecraft-opdracht](docs/19-minecraft-server.md) |
+| `<SERVICE>` | `<HOST>` | `<NETWERK>` | `<LINK>` |
 
-## Minecraft: eigenaarschap en back-up
+## Projectverantwoordelijkheden
 
 | Onderdeel | Eigenaar | Back-up | Opmerking |
 |---|---|---|---|
-| Platform en back-up | `<NAAM>` | `<NAAM>` |  |
-| Netwerk en security | `<NAAM>` | `<NAAM>` |  |
-| Hub en werelden | `<NAAM>` | `<NAAM>` |  |
-| Moderatie en regels | `<NAAM>` | `<NAAM>` |  |
-| BlueMap en monitoring | `<NAAM>` | `<NAAM>` |  |
+| Technische realisatie | `<NAAM>` | `<NAAM>` |  |
+| Security en toegang | `<NAAM>` | `<NAAM>` |  |
+| Monitoring en beheer | `<NAAM>` | `<NAAM>` |  |
+| Documentatie en overdracht | `<NAAM>` | `<NAAM>` |  |

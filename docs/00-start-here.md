@@ -12,6 +12,7 @@ Lees in deze volgorde:
 4. [github-werkwijze.md](../github-werkwijze.md)
 5. [roadmap.md](../roadmap.md)
 6. [evaluatie.md](../evaluatie.md)
+7. [mogelijke studentenprojecten](../backlog.md)
 
 ## Groepsrepo opstarten
 
@@ -19,8 +20,8 @@ Lees in deze volgorde:
 - Vul [groepsindeling.md](../groepsindeling.md) in.
 - Maak issues aan voor de eerste taken.
 - Spreek af wie welke documentatie bijhoudt.
-- Richt Bitwarden of een goedgekeurd alternatief in voor gedeelde secrets.
-- Lees [de Minecraft-serveropdracht](19-minecraft-server.md) en maak de eerste issues voor eigenaarschap, netwerkontwerp en de hub.
+- Vraag toegang tot de bestaande VPN en groepsvault aan.
+- Kies samen met de docent een project uit [backlog.md](../backlog.md).
 
 ## Gegevens van de docent
 
@@ -30,7 +31,8 @@ De docent bevestigt minstens:
 - IP-range;
 - toegangsmethode tot OPNsense;
 - toegang tot de Proxmox-nodes;
-- eventuele VPN- of campusnetwerkbeperkingen;
+- VPN- en campusnetwerkbeperkingen;
+- procedure voor onboarding op de bestaande reverse proxy en automatische backups;
 - afspraken rond WAN-bereikbaarheid;
 - deadlines.
 
@@ -54,6 +56,6 @@ Plaats deze gegevens alleen in de repo als ze geen secrets bevatten.
 - [ ] Eerste issues aangemaakt.
 - [ ] Toegang getest.
 - [ ] Eerste netwerkdiagram gestart.
-- [ ] Bitwarden-vault of alternatief ingericht.
+- [ ] Toegang tot groepsvault en bestaande VPN gevalideerd.
 - [ ] Geen secrets in GitHub.
-- [ ] Eerste Minecraft-rollen en back-ups aangeduid.
+- [ ] Project gekozen en scope bevestigd.

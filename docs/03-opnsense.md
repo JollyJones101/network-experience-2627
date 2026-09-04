@@ -1,27 +1,23 @@
 # OPNsense
 
-OPNsense is de edge firewall/router van jullie groepsomgeving. Ze vormt de grens tussen WAN/opleidingsnetwerk en het interne LAN.
+OPNsense is de bestaande edge firewall/router van jullie groepsomgeving. Ze vormt de grens tussen WAN/opleidingsnetwerk en het interne LAN. Studenten installeren of vervangen ze niet.
 
-## Verwachtingen
+## Verwachtingen voor studenten
 
 Documenteer:
 
-- WAN- en LAN-interface;
-- gateway en DNS;
-- DHCP indien gebruikt;
-- NAT/port forwards;
-- firewallregels;
-- VPN-configuratie;
-- bewijs dat Proxmox-nodes achter OPNsense zitten;
-- risico's van gepubliceerde services.
+- netwerkpad en afhankelijkheden van de eigen services;
+- benodigde NAT- of firewallwijzigingen via change request;
+- positieve en negatieve toegangstests;
+- risico's van gepubliceerde services;
+- escalatie wanneer de bestaande platformconfiguratie afwijkt.
 
-## Basischecks
+## Intakechecks
 
-- OPNsense is bereikbaar voor beheerders.
-- LAN-interface gebruikt de juiste IP-range.
-- Proxmox-nodes hebben OPNsense als gateway.
-- WAN-bereikbaarheid werkt volgens de afspraken van de docent.
+- Beheer via de bestaande VPN werkt volgens de toegewezen rechten.
+- De opgegeven gateway, DNS en servicepaden werken.
 - Er zijn geen rechtstreekse WAN-paden buiten OPNsense.
+- Afwijkingen worden gemeld; de gedeelde basis wordt niet op eigen initiatief herbouwd.
 
 ## Firewall en NAT
 
@@ -41,7 +37,7 @@ Gebruik [templates/firewall-rule-template.md](templates/firewall-rule-template.m
 
 ## VPN
 
-VPN draait bij voorkeur op OPNsense. WireGuard is aanbevolen; OpenVPN mag indien gemotiveerd. Zie [18-vpn.md](18-vpn.md).
+De VPN is al operationeel. Studenten valideren hun toegang en voeren alleen account- of routewijzigingen uit volgens de bestaande procedure.
 
 ## Niet toegestaan
 
@@ -49,4 +45,3 @@ VPN draait bij voorkeur op OPNsense. WireGuard is aanbevolen; OpenVPN mag indien
 - Proxmox-nodes rechtstreeks op WAN hangen.
 - DHCP aanbieden op verkeerde netwerken.
 - Publicatie zonder authenticatie en firewallbeperking.
-

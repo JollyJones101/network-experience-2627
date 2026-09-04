@@ -24,6 +24,7 @@ Overtredingen kunnen gevolgen hebben voor de evaluatie.
 - Beperkte Proxmox-accounts worden getest en gebruikt waar passend.
 - Firewallregels worden gemotiveerd en getest.
 - Exacte IP-ranges, logins en toegangsmethoden worden door de docent bevestigd.
+- Bestaande gedeelde platformdiensten worden niet vervangen of opnieuw geïnstalleerd zonder goedgekeurde change.
 
 ## Veilig testen
 
@@ -34,4 +35,3 @@ Gebruik gecontroleerde testscenario's. Simuleer uitval of destructieve acties al
 - rollbackplan;
 - verwachte uitkomst;
 - validatie.
-

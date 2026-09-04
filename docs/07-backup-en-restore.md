@@ -1,39 +1,40 @@
-# Backup en restore
+# Bestaande backups en herstel
 
-Back-ups zijn pas waardevol wanneer restore getest is.
+De automatische backupvoorziening is al operationeel. Studenten hoeven geen nieuw backupplatform of eigen parallelle backupstack te bouwen. Eigen projectdata kan volgens de bestaande procedure in de backupvoorziening worden opgenomen.
 
 ## Verwachtingen
 
 Documenteer:
 
-- wat geback-upt wordt;
-- waar back-ups staan;
-- retentie;
-- frequentie;
+- welke eigen data en configuratie beschermd moeten worden;
+- welke bestaande job, retentie en opslag daarvoor gebruikt worden;
 - verantwoordelijke;
 - restoreprocedure;
 - testresultaten;
 - mislukte tests en verbeteringen.
 
-## Scope
+## Geen installatieopdracht
 
-Denk minstens aan:
+Het opnieuw opzetten van automatische jobs, backupservers of opslag levert geen punten op. Wijzigingen aan de centrale backupvoorziening verlopen via de docent of de afgesproken changeprocedure.
 
-- webshare-data;
-- n8n-configuratie en workflows;
+## Mogelijke herstelscope
+
+Denk afhankelijk van het gekozen project aan:
+
+- data van de onboarded service;
+- applicatiedata en configuratie;
 - belangrijke VM's/containers;
 - OPNsense-configuratie-export zonder secrets waar mogelijk;
 - documentatie in Git.
 
-## Restore-test
+## Hersteltest
 
 Gebruik [templates/backup-test-template.md](templates/backup-test-template.md).
 
-Minimale bewijsvoering:
+Een hersteltest kan worden vastgelegd met:
 
 - startstatus;
 - uitgevoerde stappen;
 - resultaat;
 - screenshots/logs zonder secrets;
 - lessons learned.
-

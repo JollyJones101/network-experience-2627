@@ -41,9 +41,8 @@ Link naar diagram in `diagrams/`:
 
 - [ ] LAN-connectiviteit getest.
 - [ ] DNS getest.
-- [ ] VPN getest.
-- [ ] Webshare getest.
-- [ ] n8n getest.
+- [ ] Toegang via de bestaande VPN getest.
+- [ ] Onboarded service via de bestaande reverse proxy getest.
+- [ ] Automatiserings- en monitoringpaden getest.
 - [ ] SDN-connectiviteit getest.
 - [ ] Firewallblokkade getest.
-

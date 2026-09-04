@@ -19,7 +19,7 @@ Elke groep clone't of fork't deze repository en gebruikt ze als eigen werkruimte
 
 Wat niet gedocumenteerd, getest of gelogd is, telt beperkt of niet mee.
 
-## Wat bouwen jullie?
+## Waarop werken jullie?
 
 Elke groep krijgt een eigen virtuele labo-omgeving:
 
@@ -36,32 +36,20 @@ Fysieke Proxmoxcluster opleiding
 
 De docent beheert de fysieke Proxmoxcluster en de onderliggende doos-Proxmox. Studenten krijgen daar geen beheerrechten op.
 
-Jullie beheren wel:
+De hardware, de Proxmox-basisomgeving, automatische backups, reverse proxy, VPN, SSO en NetBox zijn bij de start operationeel. Jullie bouwen die onderdelen niet opnieuw. Jullie gebruiken en valideren ze, melden afwijkingen en beheren de workloads die jullie erop plaatsen.
 
-- OPNsense;
-- de drie virtuele Proxmox-nodes;
-- het Proxmox-cluster;
+Jullie beheren binnen de afgesproken scope:
+
+- toegewezen netwerk-, rechten- en firewallconfiguratie voor de eigen workloads;
+- toegewezen resources op het Proxmox-cluster;
 - VM's, containers, netwerken en services binnen jullie cluster;
 - documentatie, changes, incidenten en bewijsvoering.
 
 Alle verkeer van de Proxmox-nodes en services moet via OPNsense verlopen. De onderliggende virtuele bekabeling mag niet aangepast of omzeild worden.
 
-## Verplichte kernonderdelen
+## Project kiezen
 
-Elke groep realiseert, documenteert, test en verdedigt minstens:
-
-- Proxmox-cluster met drie nodes;
-- Proxmox SDN met minstens een zone en VNet;
-- Proxmox user management met rollen, pools en beperkte account;
-- professioneel password management met Bitwarden of goedgekeurd alternatief;
-- webshare die veilig bereikbaar is via de WAN-kant of het opleidingsnetwerk;
-- n8n-automatisatie voor een zinvolle beheerworkflow;
-- Proxmox firewall met security groups en IP sets waar zinvol;
-- High Availability met een kleine testresource;
-- VPN-toegang tot de interne beheeromgeving;
-- back-up en restore-test;
-- monitoring, logging, incidenten en change management.
-- een duurzame Minecraft-server voor de opleiding met BlueMap, een beschermde hub, rolverdeling, optimalisatie en overdracht: zie [docs/19-minecraft-server.md](docs/19-minecraft-server.md).
+Alle mogelijke studentenprojecten staan uitsluitend in [backlog.md](backlog.md). Kies samen met de docent één haalbaar project en maak daarna issues voor ontwerp, uitvoering, tests, documentatie en overdracht.
 
 De omgeving is beperkt: reken op drie virtuele Proxmox-nodes met ongeveer 8 GB RAM per node. Kies dus bewust voor lichte VM's, LXC-containers of Docker-containers. Zware enterprise-stacks zijn alleen verdedigbaar als je resource-impact correct aantoont.
 
@@ -83,11 +71,11 @@ De evaluatie kijkt niet alleen naar "het werkt".
 
 | Domein | Gewicht |
 |---|---:|
-| Technische realisatie en integratie | 40% |
+| Technische realisatie en integratie | 30% |
 | Security, rechtenbeheer en netwerkafscherming | 20% |
-| Documentatie, reproduceerbaarheid en change management | 20% |
-| Operations, troubleshooting, monitoring en incidentbeheer | 10% |
-| Samenwerking, communicatie en individuele bijdrage | 10% |
+| Automatisering en reproduceerbaarheid | 15% |
+| Operations, observability en resilience | 20% |
+| Documentatie, samenwerking en individuele bijdrage | 15% |
 
 Een werkende oplossing zonder correcte uitleg, documentatie, securityconfiguratie of testbewijs is niet automatisch voldoende.
 

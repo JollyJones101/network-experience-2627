@@ -6,10 +6,10 @@ De docent deelt de initiële toegangsmethoden mee. Noteer in jullie documentatie
 
 | Systeem | Toegang | Opmerking |
 |---|---|---|
-| OPNsense | `<DOOR_DOCENT>` | Geen wachtwoorden in repo |
-| pve-x-01 | `<DOOR_DOCENT>` | Proxmox node |
-| pve-x-02 | `<DOOR_DOCENT>` | Proxmox node |
-| pve-x-03 | `<DOOR_DOCENT>` | Proxmox node |
+| Bestaande VPN | `<DOOR_DOCENT>` | Verplichte route voor beheer |
+| OPNsense | `<DOOR_DOCENT/INDIEN_NODIG>` | Alleen binnen toegewezen beheerrechten |
+| Proxmox-cluster | `<DOOR_DOCENT>` | Beperkte groepsscope |
+| Reverse proxy | `<AANVRAAGPROCEDURE>` | Onboarding, geen herinstallatie |
 | Bitwarden | `<GROEPSVAULT>` | Secrets buiten GitHub |
 
 ## Waar mag je inloggen?
@@ -57,4 +57,3 @@ Log betekenisvolle adminacties via:
 - relevante documentatie.
 
 Bij verloren toegang: maak een supportticket met context, impact, reeds geteste stappen en gevraagde hulp.
-

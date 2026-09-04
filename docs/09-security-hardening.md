@@ -1,6 +1,6 @@
 # Security hardening
 
-Security is een kernonderdeel van de opdracht.
+Security geldt voor elk gekozen project.
 
 ## Verwachtingen
 
@@ -9,7 +9,7 @@ Security is een kernonderdeel van de opdracht.
 - Least privilege toepassen.
 - Proxmox user management gebruiken.
 - Bitwarden of goedgekeurd alternatief gebruiken.
-- VPN-toegang beperken.
+- bestaande VPN-toegang en routes op least privilege controleren.
 - OPNsense en Proxmox firewall combineren.
 - Logging controleren.
 - Certificaten en keys veilig beheren.
@@ -22,17 +22,16 @@ Security is een kernonderdeel van de opdracht.
 - [ ] Pools en ACL's gedocumenteerd.
 - [ ] OPNsense-regels gemotiveerd.
 - [ ] Proxmox security groups gebruikt.
-- [ ] Webshare heeft authenticatie.
-- [ ] n8n is niet onbeveiligd publiek bereikbaar.
-- [ ] VPN-users/peers zijn beheerd.
+- [ ] Onboarded service heeft passende authenticatie.
+- [ ] Beheer- en automatiseringsinterfaces zijn niet onbeveiligd publiek bereikbaar.
+- [ ] VPN-toegang volgt de bestaande aanvraag- en intrekkingsprocedure.
 - [ ] Secrets staan in Bitwarden.
 - [ ] Backups en exports bevatten geen zichtbare secrets.
 
 ## Verboden
 
 - `allow all` als blijvende firewallstrategie.
-- Anonieme write-access op webshare.
-- Onbeveiligde publieke n8n.
+- Onnodige anonieme write-access op een onboarded service.
+- Onbeveiligde publieke beheer- of automatiseringsinterfaces.
 - Private keys of recovery codes in repo.
 - Bypass van OPNsense.
-

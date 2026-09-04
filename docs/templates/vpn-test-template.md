@@ -1,4 +1,4 @@
-# VPN-test template
+# Validatie bestaande VPN
 
 ## Metadata
 
@@ -9,7 +9,7 @@
 | Datum | `<DATUM>` |
 | Peer/user | `<NAAM_ZONDER_SECRET>` |
 
-## Configuratie
+## Bestaande configuratie
 
 | Onderdeel | Waarde |
 |---|---|
@@ -21,8 +21,8 @@
 
 - [ ] VPN-connectie komt op.
 - [ ] Proxmox webinterface bereikbaar.
-- [ ] Webshare bereikbaar.
-- [ ] n8n bereikbaar indien van toepassing.
+- [ ] Onboarded service bereikbaar indien bedoeld.
+- [ ] Automatiserings- of monitoringservice bereikbaar indien bedoeld.
 - [ ] Monitoring/testservice bereikbaar.
 - [ ] Niet-toegestane toegang geblokkeerd.
 
@@ -30,7 +30,6 @@
 
 `<TESTBEWIJS_ZONDER_SECRETS>`
 
-## Intrekken toegang
+## Bestaande procedure voor intrekken toegang
 
 `<HOE_WORDT_DEZE_PEER_OF_USER_INGETROKKEN>`
-

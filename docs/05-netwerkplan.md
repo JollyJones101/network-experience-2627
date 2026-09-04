@@ -8,7 +8,7 @@ Vul dit document aan met het echte netwerkplan van jullie groep. Gebruik [templa
 - gateway;
 - DNS;
 - DHCP-scope;
-- VPN-range;
+- relevante bestaande VPN-range en toegelaten routes;
 - Proxmox SDN-zone en VNet;
 - VLANs indien gebruikt;
 - firewallzones;
@@ -38,8 +38,7 @@ Voorzie tests voor:
 - DNS-resolutie;
 - internet/WAN-bereikbaarheid volgens afspraken;
 - VPN-toegang;
-- webshare-publicatie;
-- n8n-bereikbaarheid;
+- publicatie van de gekozen service via de bestaande reverse proxy;
+- automatiserings- en monitoringpaden;
 - Proxmox SDN-connectiviteit;
 - toegelaten en geblokkeerd firewallverkeer.
-

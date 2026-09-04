@@ -37,7 +37,10 @@ De docent is niet verantwoordelijk voor het oplossen van elke configuratiefout. 
 
 Exacte deadlines worden door de docent bevestigd. Gebruik [roadmap.md](roadmap.md) als basisplanning en maak issues aan voor concrete taken.
 
+## Bestaande platformdiensten
+
+De hardware, automatische backups, reverse proxy, VPN, SSO en NetBox zijn bestaande opleidingsdiensten. Studenten installeren deze niet opnieuw. Ze gebruiken de voorziene aanvraag- en changeprocedures, valideren de werking voor hun eigen services en melden platformproblemen via een supportticket.
+
 ## Resourcebewust werken
 
 Elke groep werkt met drie virtuele Proxmox-nodes van ongeveer 8 GB RAM. Kies lichte oplossingen. Documenteer waarom een service haalbaar is binnen jullie omgeving.
-

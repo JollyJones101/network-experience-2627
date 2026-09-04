@@ -1,6 +1,6 @@
 # Proxmox-cluster
 
-Jullie bouwen een Proxmox-cluster met drie virtuele nodes:
+Jullie krijgen een werkend Proxmox-cluster met drie virtuele nodes:
 
 - pve-x-01;
 - pve-x-02;
@@ -8,22 +8,17 @@ Jullie bouwen een Proxmox-cluster met drie virtuele nodes:
 
 Dit is een nested labo-omgeving, geen productiecluster met volledige performance. Documenteer beperkingen eerlijk.
 
-## Verwachtingen
+## Geen installatieopdracht
 
-- Controleer bereikbaarheid van alle nodes.
-- Vorm een cluster.
-- Gebruik consequente node naming.
-- Documenteer storagekeuzes.
-- Maak minstens een test-VM of test-container.
-- Richt users, rollen, pools en ACL's in.
-- Gebruik Proxmox SDN.
-- Gebruik Proxmox firewall en security groups.
-- Configureer HA met een kleine testresource.
-- Documenteer beperkingen van nested virtualization.
+Het vormen van het cluster, de basisbekabeling en de initiële storageconfiguratie zijn al uitgevoerd. Deze opnieuw uitvoeren levert geen punten op. Behandel het cluster als een overgenomen platform en wijzig gedeelde basisinstellingen alleen via een goedgekeurde change.
+
+## Beschikbare mogelijkheden
+
+Binnen de toegewezen rechten ondersteunt het platform VM's, containers, pools, ACL's, Proxmox SDN, firewallregels en beperkte HA-tests. De beschikbare capaciteit en beperkingen van nested virtualization worden door de docent meegedeeld.
 
 ## Storage
 
-Beschrijf:
+Relevante aandachtspunten zijn:
 
 - welke storage beschikbaar is;
 - waarvoor ze gebruikt wordt;
@@ -33,7 +28,7 @@ Beschrijf:
 
 ## VM/CT-netwerken
 
-Documenteer per VM/container:
+Gebruik voor de inventarisatie per VM/container:
 
 - naam;
 - hostnode;
@@ -44,4 +39,3 @@ Documenteer per VM/container:
 - eigenaar.
 
 Gebruik [templates/server-template.md](templates/server-template.md) of [templates/service-template.md](templates/service-template.md).
-
