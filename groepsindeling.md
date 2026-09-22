@@ -14,7 +14,7 @@
 
 | Naam | Primaire rol | Back-uprol | GitHub-gebruiker |
 |---|---|---|---|
-| `<NAAM>` | `<ROL>` | `<ROL>` | `<GITHUB>` |
+| `<jamie>` | `<teamlead>` | `<ROL>` | `<GITHUB>` |
 | `<NAAM>` | `<ROL>` | `<ROL>` | `<GITHUB>` |
 | `<NAAM>` | `<ROL>` | `<ROL>` | `<GITHUB>` |
 
