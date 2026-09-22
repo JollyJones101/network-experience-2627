@@ -178,7 +178,7 @@
 
 | Naam | Primaire rol | GitHub-gebruiker |
 |---|---|---|
-| Jamie | `<ROL>` | `<GITHUB>` |
+| Jamie | `<ROL>` | `<https://github.com/JollyJones101/gameserver-management>` |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
