@@ -4,14 +4,14 @@
 
 | Onderdeel | Waarde |
 |---|---|
-| Proxmox-pool | `<POOL>` |
-| VMID-range | `<RANGE>` |
-| Netwerk/VLAN | `<DOOR_DOCENT>` |
-| Subnet en gateway | `<DOOR_DOCENT>` |
-| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
-| vCPU-budget | `<MAX>` |
-| RAM-budget | `<MAX>` |
-| Diskbudget | `<MAX>` |
+| Proxmox-pool | `<network-experience>` |
+| VMID-range | `<600-700>` |
+| Netwerk/VLAN | `<20>` |
+| Subnet | `<10.21.0.0/16>` |
+| DNS-domein | `<10.21.0.1>` |
+| vCPU-budget | `<24>` |
+| RAM-budget | `<140Gb>` |
+| Diskbudget | `<1T>` |
 | Back-upvenster | `<AFSPRAAK>` |
 
 
