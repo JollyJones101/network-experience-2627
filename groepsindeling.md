@@ -64,7 +64,8 @@
 |---|---|
 | Groepsnummer en naam | Groep 2 |
 | Project | [n8n Automation Hub](02-n8n-automation-hub.md) |
-| Repository | `<URL>` |
+| Repository | `<[URL](https://github.com/EwoudBoutje/network-experience-2627-n8n
+GitHub)>` |
 | Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
 | Technische coach | `<DOCENT>` |
 
@@ -72,8 +73,7 @@
 
 | Naam | Primaire rol | GitHub-gebruiker |
 |---|---|---|
-| Ewoud | `<ROL>` | `<https://github.com/EwoudBoutje/network-experience-2627-n8n
-GitHub>` |
+| Ewoud | `<ROL>` | `<githubuser>` |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
