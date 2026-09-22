@@ -170,7 +170,7 @@
 |---|---|
 | Groepsnummer en naam | Groep 8 |
 | Project | [Game Server as a Service](08-game-server-platform.md) |
-| Repository | `<URL>` |
+| Repository | `<https://github.com/JollyJones101/gameserver-management>` |
 | Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
 | Technische coach | `<DOCENT>` |
 
@@ -178,7 +178,7 @@
 
 | Naam | Primaire rol | GitHub-gebruiker |
 |---|---|---|
-| Jamie | `lead` | `[URL]https://github.com/JollyJones101/gameserver-management` |
+| Jamie | `lead` | `JonllyJones101` |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
