@@ -64,8 +64,8 @@
 |---|---|
 | Groepsnummer en naam | Groep 2 |
 | Project | [n8n Automation Hub](02-n8n-automation-hub.md) |
-| Repository | `<[URL](https://github.com/EwoudBoutje/network-experience-2627-n8n
-GitHub)>` |
+| Repository | [URL](https://github.com/EwoudBoutje/network-experience-2627-n8n
+GitHub) |
 | Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
 | Technische coach | `<DOCENT>` |
 
