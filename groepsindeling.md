@@ -1,5 +1,21 @@
 # Groeps- en projectfiches
 
+### Toegewezen Smith-scope
+
+| Onderdeel | Waarde |
+|---|---|
+| Proxmox-pool | `<POOL>` |
+| VMID-range | `<RANGE>` |
+| Netwerk/VLAN | `<DOOR_DOCENT>` |
+| Subnet en gateway | `<DOOR_DOCENT>` |
+| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
+| vCPU-budget | `<MAX>` |
+| RAM-budget | `<MAX>` |
+| Diskbudget | `<MAX>` |
+| Back-upvenster | `<AFSPRAAK>` |
+
+
+
 ## Groep 1 - Minecraft Community Platform
 
 ### Identiteit
@@ -24,19 +40,6 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Toegewezen Smith-scope
-
-| Onderdeel | Waarde |
-|---|---|
-| Proxmox-pool | `<POOL>` |
-| VMID-range | `<RANGE>` |
-| Netwerk/VLAN | `<DOOR_DOCENT>` |
-| Subnet en gateway | `<DOOR_DOCENT>` |
-| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
-| vCPU-budget | `<MAX>` |
-| RAM-budget | `<MAX>` |
-| Diskbudget | `<MAX>` |
-| Back-upvenster | `<AFSPRAAK>` |
 
 ### Workloads
 
@@ -76,19 +79,6 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Toegewezen Smith-scope
-
-| Onderdeel | Waarde |
-|---|---|
-| Proxmox-pool | `<POOL>` |
-| VMID-range | `<RANGE>` |
-| Netwerk/VLAN | `<DOOR_DOCENT>` |
-| Subnet en gateway | `<DOOR_DOCENT>` |
-| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
-| vCPU-budget | `<MAX>` |
-| RAM-budget | `<MAX>` |
-| Diskbudget | `<MAX>` |
-| Back-upvenster | `<AFSPRAAK>` |
 
 ### Workloads
 
@@ -130,19 +120,6 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Toegewezen Smith-scope
-
-| Onderdeel | Waarde |
-|---|---|
-| Proxmox-pool | `<POOL>` |
-| VMID-range | `<RANGE>` |
-| Netwerk/VLAN | `<DOOR_DOCENT>` |
-| Subnet en gateway | `<DOOR_DOCENT>` |
-| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
-| vCPU-budget | `<MAX>` |
-| RAM-budget | `<MAX>` |
-| Diskbudget | `<MAX>` |
-| Back-upvenster | `<AFSPRAAK>` |
 
 ### Workloads
 
@@ -171,30 +148,17 @@
 | Groepsnummer en naam | Groep 8 |
 | Project | [Game Server as a Service](08-game-server-platform.md) |
 | Repository | `<https://github.com/JollyJones101/gameserver-management>` |
-| Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
-| Technische coach | `<DOCENT>` |
+| Product owner / opdrachtgever | `Mathieu Leroy` |
+| Technische coach | `<Mathieu Leroy>` |
 
 ### Studenten
 
 | Naam | Primaire rol | GitHub-gebruiker |
 |---|---|---|
-| Jamie | `lead` | `JonllyJones101` |
+| Jamie | `lead` | `JollyJones101` |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Toegewezen Smith-scope
-
-| Onderdeel | Waarde |
-|---|---|
-| Proxmox-pool | `<POOL>` |
-| VMID-range | `<RANGE>` |
-| Netwerk/VLAN | `<DOOR_DOCENT>` |
-| Subnet en gateway | `<DOOR_DOCENT>` |
-| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
-| vCPU-budget | `<MAX>` |
-| RAM-budget | `<MAX>` |
-| Diskbudget | `<MAX>` |
-| Back-upvenster | `<AFSPRAAK>` |
 
 ### Workloads
 
@@ -237,19 +201,6 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Toegewezen Smith-scope
-
-| Onderdeel | Waarde |
-|---|---|
-| Proxmox-pool | `<POOL>` |
-| VMID-range | `<RANGE>` |
-| Netwerk/VLAN | `<DOOR_DOCENT>` |
-| Subnet en gateway | `<DOOR_DOCENT>` |
-| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
-| vCPU-budget | `<MAX>` |
-| RAM-budget | `<MAX>` |
-| Diskbudget | `<MAX>` |
-| Back-upvenster | `<AFSPRAAK>` |
 
 ### Workloads
 
