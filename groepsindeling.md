@@ -1,25 +1,30 @@
-# Groeps- en projectfiche
+# Groeps- en projectfiches
 
-## Identiteit
+## Groep 1 - Minecraft Community Platform
+
+### Identiteit
 
 | Veld | Waarde |
 |---|---|
-| Groepsnummer en naam | `<GROEP>` |
-| Project | `<PROJECT_EN_LINK_NAAR_FICHE>` |
+| Groepsnummer en naam | Groep 1 |
+| Project | [Minecraft Community Platform](01-minecraft-community.md) |
 | Repository | `<URL>` |
 | Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
 | Technische coach | `<DOCENT>` |
 
-## Studenten
+### Studenten
 
-| Naam | Primaire rol | Back-uprol | GitHub-gebruiker |
-|---|---|---|---|
-| `<jamie>` | `<teamlead>` | `<watchfulleye>` | `<JollyJones101>` |
+| Naam | Primaire rol | GitHub-gebruiker |
+|---|---|---|
+| Bram | `<ROL>` | `<GITHUB>` |
+| Kevin | `<ROL>` | `<GITHUB>` |
+| Xander | `<ROL>` | `<GITHUB>` |
+| Hengda | `<ROL>` | `<GITHUB>` |
+| Miel | `<ROL>` | `<GITHUB>` |
 
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
-
-## Toegewezen Smith-scope
+### Toegewezen Smith-scope
 
 | Onderdeel | Waarde |
 |---|---|
@@ -33,13 +38,13 @@ Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwe
 | Diskbudget | `<MAX>` |
 | Back-upvenster | `<AFSPRAAK>` |
 
-## Workloads
+### Workloads
 
 | VMID | Naam | Functie | IP-adres | vCPU | RAM | Disk | Eigenaar |
 |---:|---|---|---|---:|---:|---:|---|
 | `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>` | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
 
-## Verantwoordelijkheden
+### Verantwoordelijkheden
 
 | Onderdeel | Primair | Back-up | Runbook |
 |---|---|---|---|
@@ -49,12 +54,215 @@ Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwe
 | Monitoring en herstel | `<NAAM>` | `<NAAM>` | `<LINK>` |
 | Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
 
-## Groepen
+---
 
-| Nr. | Project | Teamleden |
-|------|---------|------------|
-| 1 | [Minecraft Community Platform](01-minecraft-community.md) | Bram, Kevin, Xander, Hengda, Miel |
-| 2 | [n8n Automation Hub](02-n8n-automation-hub.md) | Ewoud |
-| 3 | [LAN-party van A tot Z](03-lan-party.md) | Kyell, Jason, Jules |
-| 8 | [Game Server as a Service](08-game-server-platform.md) | Jamie |
-| 9 | [Studentencloud](09-studentencloud.md) | Michiel, Thorben, Maxim, Timo |
+## Groep 2 - n8n Automation Hub
+
+### Identiteit
+
+| Veld | Waarde |
+|---|---|
+| Groepsnummer en naam | Groep 2 |
+| Project | [n8n Automation Hub](02-n8n-automation-hub.md) |
+| Repository | `<URL>` |
+| Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
+| Technische coach | `<DOCENT>` |
+
+### Studenten
+
+| Naam | Primaire rol | GitHub-gebruiker |
+|---|---|---|
+| Ewoud | `<ROL>` | `<GITHUB>` |
+
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
+
+### Toegewezen Smith-scope
+
+| Onderdeel | Waarde |
+|---|---|
+| Proxmox-pool | `<POOL>` |
+| VMID-range | `<RANGE>` |
+| Netwerk/VLAN | `<DOOR_DOCENT>` |
+| Subnet en gateway | `<DOOR_DOCENT>` |
+| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
+| vCPU-budget | `<MAX>` |
+| RAM-budget | `<MAX>` |
+| Diskbudget | `<MAX>` |
+| Back-upvenster | `<AFSPRAAK>` |
+
+### Workloads
+
+| VMID | Naam | Functie | IP-adres | vCPU | RAM | Disk | Eigenaar |
+|---:|---|---|---|---:|---:|---:|---|
+| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>` | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+
+### Verantwoordelijkheden
+
+| Onderdeel | Primair | Back-up | Runbook |
+|---|---|---|---|
+| Platform en deployment | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Netwerk en security | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Applicatie en gebruikers | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Monitoring en herstel | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
+
+---
+
+## Groep 3 - LAN-party van A tot Z
+
+### Identiteit
+
+| Veld | Waarde |
+|---|---|
+| Groepsnummer en naam | Groep 3 |
+| Project | [LAN-party van A tot Z](03-lan-party.md) |
+| Repository | `<URL>` |
+| Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
+| Technische coach | `<DOCENT>` |
+
+### Studenten
+
+| Naam | Primaire rol | GitHub-gebruiker |
+|---|---|---|
+| Kyell | `<ROL>` | `<GITHUB>` |
+| Jason | `<ROL>` | `<GITHUB>` |
+| Jules | `<ROL>` | `<GITHUB>` |
+
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
+
+### Toegewezen Smith-scope
+
+| Onderdeel | Waarde |
+|---|---|
+| Proxmox-pool | `<POOL>` |
+| VMID-range | `<RANGE>` |
+| Netwerk/VLAN | `<DOOR_DOCENT>` |
+| Subnet en gateway | `<DOOR_DOCENT>` |
+| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
+| vCPU-budget | `<MAX>` |
+| RAM-budget | `<MAX>` |
+| Diskbudget | `<MAX>` |
+| Back-upvenster | `<AFSPRAAK>` |
+
+### Workloads
+
+| VMID | Naam | Functie | IP-adres | vCPU | RAM | Disk | Eigenaar |
+|---:|---|---|---|---:|---:|---:|---|
+| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>` | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+
+### Verantwoordelijkheden
+
+| Onderdeel | Primair | Back-up | Runbook |
+|---|---|---|---|
+| Platform en deployment | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Netwerk en security | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Applicatie en gebruikers | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Monitoring en herstel | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
+
+---
+
+## Groep 8 - Game Server as a Service
+
+### Identiteit
+
+| Veld | Waarde |
+|---|---|
+| Groepsnummer en naam | Groep 8 |
+| Project | [Game Server as a Service](08-game-server-platform.md) |
+| Repository | `<URL>` |
+| Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
+| Technische coach | `<DOCENT>` |
+
+### Studenten
+
+| Naam | Primaire rol | GitHub-gebruiker |
+|---|---|---|
+| Jamie | `<ROL>` | `<GITHUB>` |
+
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
+
+### Toegewezen Smith-scope
+
+| Onderdeel | Waarde |
+|---|---|
+| Proxmox-pool | `<POOL>` |
+| VMID-range | `<RANGE>` |
+| Netwerk/VLAN | `<DOOR_DOCENT>` |
+| Subnet en gateway | `<DOOR_DOCENT>` |
+| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
+| vCPU-budget | `<MAX>` |
+| RAM-budget | `<MAX>` |
+| Diskbudget | `<MAX>` |
+| Back-upvenster | `<AFSPRAAK>` |
+
+### Workloads
+
+| VMID | Naam | Functie | IP-adres | vCPU | RAM | Disk | Eigenaar |
+|---:|---|---|---|---:|---:|---:|---|
+| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>` | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+
+### Verantwoordelijkheden
+
+| Onderdeel | Primair | Back-up | Runbook |
+|---|---|---|---|
+| Platform en deployment | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Netwerk en security | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Applicatie en gebruikers | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Monitoring en herstel | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
+
+---
+
+## Groep 9 - Studentencloud
+
+### Identiteit
+
+| Veld | Waarde |
+|---|---|
+| Groepsnummer en naam | Groep 9 |
+| Project | [Studentencloud](09-studentencloud.md) |
+| Repository | `<URL>` |
+| Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
+| Technische coach | `<DOCENT>` |
+
+### Studenten
+
+| Naam | Primaire rol | GitHub-gebruiker |
+|---|---|---|
+| Michiel | `<ROL>` | `<GITHUB>` |
+| Thorben | `<ROL>` | `<GITHUB>` |
+| Maxim | `<ROL>` | `<GITHUB>` |
+| Timo | `<ROL>` | `<GITHUB>` |
+
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
+
+### Toegewezen Smith-scope
+
+| Onderdeel | Waarde |
+|---|---|
+| Proxmox-pool | `<POOL>` |
+| VMID-range | `<RANGE>` |
+| Netwerk/VLAN | `<DOOR_DOCENT>` |
+| Subnet en gateway | `<DOOR_DOCENT>` |
+| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
+| vCPU-budget | `<MAX>` |
+| RAM-budget | `<MAX>` |
+| Diskbudget | `<MAX>` |
+| Back-upvenster | `<AFSPRAAK>` |
+
+### Workloads
+
+| VMID | Naam | Functie | IP-adres | vCPU | RAM | Disk | Eigenaar |
+|---:|---|---|---|---:|---:|---:|---|
+| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>` | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+
+### Verantwoordelijkheden
+
+| Onderdeel | Primair | Back-up | Runbook |
+|---|---|---|---|
+| Platform en deployment | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Netwerk en security | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Applicatie en gebruikers | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Monitoring en herstel | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
