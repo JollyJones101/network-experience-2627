@@ -72,7 +72,8 @@
 
 | Naam | Primaire rol | GitHub-gebruiker |
 |---|---|---|
-| Ewoud | `<ROL>` | `<GITHUB>` |
+| Ewoud | `<ROL>` | `<[GITHUB](https://github.com/EwoudBoutje/network-experience-2627-n8n
+GitHub)>` |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
