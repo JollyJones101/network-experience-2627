@@ -108,11 +108,11 @@
 
 ### Studenten
 
-| Naam  | Primaire rol | GitHub-gebruiker                                                         |
-| ----- | ------------ | ------------------------------------------------------------------------ |
-| Kyell | `<member>`   | [https://github.com/Kyell182](https://github.com/Kyell182)               |
-| Jason | `<member>`   | [https://github.com/JasonDeSmet2025](https://github.com/JasonDeSmet2025) |
-| Jules | `<member>`   | [https://github.com/JulesDeclercq](https://github.com/JulesDeclercq)     |
+| Naam  | Primaire rol | GitHub-gebruiker                                      |
+| ----- | ------------ | ----------------------------------------------------- |
+| Kyell | `<member>`   | [Kyell182](https://github.com/Kyell182)               |
+| Jason | `<member>`   | [JasonDeSmet2025](https://github.com/JasonDeSmet2025) |
+| Jules | `<member>`   | [JulesDeclercq](https://github.com/JulesDeclercq)     |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
