@@ -1,42 +1,51 @@
-# Groepsindeling
+# Groeps- en projectfiche
 
-Vul dit bestand in voor jullie groep.
+## Identiteit
 
 | Veld | Waarde |
 |---|---|
-| Groepsnummer | `<GROEP_NUMMER>` |
-| Repository | `<URL_GROEPSREPO>` |
-| IP-range | `<DOOR_DOCENT_BEVESTIGD>` |
-| OPNsense LAN-adres | `<OPNSENSE_LAN_IP>` |
-| VPN-range | `<VPN_RANGE>` |
+| Groepsnummer en naam | `<GROEP>` |
+| Project | `<PROJECT_EN_LINK_NAAR_FICHE>` |
+| Repository | `<URL>` |
+| Product owner / opdrachtgever | `<NAAM_OF_ROL>` |
+| Technische coach | `<DOCENT>` |
 
 ## Studenten
 
-| Naam | Rol/verantwoordelijkheden | GitHub-gebruiker |
-|---|---|---|
-| `<NAAM>` | `<ROL>` | `<GITHUB>` |
-| `<NAAM>` | `<ROL>` | `<GITHUB>` |
-| `<NAAM>` | `<ROL>` | `<GITHUB>` |
-
-## Proxmox-nodes
-
-| Node | IP-adres | Opmerking |
-|---|---|---|
-| pve-x-01 | `<IP>` |  |
-| pve-x-02 | `<IP>` |  |
-| pve-x-03 | `<IP>` |  |
-
-## Services
-
-| Service | Host | Netwerk | Documentatie |
+| Naam | Primaire rol | Back-uprol | GitHub-gebruiker |
 |---|---|---|---|
-| `<SERVICE>` | `<HOST>` | `<NETWERK>` | `<LINK>` |
+| `<NAAM>` | `<ROL>` | `<ROL>` | `<GITHUB>` |
+| `<NAAM>` | `<ROL>` | `<ROL>` | `<GITHUB>` |
+| `<NAAM>` | `<ROL>` | `<ROL>` | `<GITHUB>` |
 
-## Projectverantwoordelijkheden
+Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-| Onderdeel | Eigenaar | Back-up | Opmerking |
+## Toegewezen Smith-scope
+
+| Onderdeel | Waarde |
+|---|---|
+| Proxmox-pool | `<POOL>` |
+| VMID-range | `<RANGE>` |
+| Netwerk/VLAN | `<DOOR_DOCENT>` |
+| Subnet en gateway | `<DOOR_DOCENT>` |
+| DNS-domein | `<DOOR_DOCENT_OF_NVT>` |
+| vCPU-budget | `<MAX>` |
+| RAM-budget | `<MAX>` |
+| Diskbudget | `<MAX>` |
+| Back-upvenster | `<AFSPRAAK>` |
+
+## Workloads
+
+| VMID | Naam | Functie | IP-adres | vCPU | RAM | Disk | Eigenaar |
+|---:|---|---|---|---:|---:|---:|---|
+| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>` | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+
+## Verantwoordelijkheden
+
+| Onderdeel | Primair | Back-up | Runbook |
 |---|---|---|---|
-| Technische realisatie | `<NAAM>` | `<NAAM>` |  |
-| Security en toegang | `<NAAM>` | `<NAAM>` |  |
-| Monitoring en beheer | `<NAAM>` | `<NAAM>` |  |
-| Documentatie en overdracht | `<NAAM>` | `<NAAM>` |  |
+| Platform en deployment | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Netwerk en security | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Applicatie en gebruikers | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Monitoring en herstel | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |

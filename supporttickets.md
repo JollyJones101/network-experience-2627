@@ -24,3 +24,4 @@ Een supportticket is een issue waarmee je een probleem opvolgt dat hulp, analyse
 - validatie;
 - documentatie-impact.
 
+Voor gedeelde diensten vermeld je ook groep, Proxmox-pool, betrokken VMID's, tijdstip en of andere projecten mogelijk impact ondervinden. Voeg nooit wachtwoorden, tokens of volledige configuratie-exports toe.

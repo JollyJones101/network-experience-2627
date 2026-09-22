@@ -1,89 +1,73 @@
-# Network Experience
+# Network Experience 2026–2027
 
-Welkom bij **Network Experience**, het afsluitende netwerk- en systeembeheervak voor studenten Elektronica-ICT, afstudeerrichting ICT.
+In **Network Experience** bouwt en beheert elke studentengroep een echte dienst voor de opleiding. Jullie werken niet in een wegwerplabo: de VM's draaien op de gedeelde Proxmox-productieomgeving, op node **Smith**. Daarom tellen technische kwaliteit, veiligheid, communicatie en overdraagbaarheid even zwaar als een geslaagde demo.
 
-In dit vak beheer je met je groep een kleine bedrijfsomgeving. Je krijgt geen volledig stappenplan dat je blind volgt. Je onderzoekt, beslist, configureert, test, documenteert en verdedigt je keuzes zoals je dat in een professionele beheercontext zou doen.
+Jullie krijgen een afgebakende Proxmox-pool, een resourcebudget en rechten om binnen die pool VM's aan te maken en te beheren. De host, storage, uplinks en globale Proxmox-configuratie blijven onder beheer van de opleiding.
 
-## Deze repo als groepsblueprint
+## De opdracht
 
-Elke groep clone't of fork't deze repository en gebruikt ze als eigen werkruimte.
+Elke groep krijgt één groot project uit de [projectcatalogus](projecten/README.md). Het resultaat moet bruikbaar zijn voor echte gebruikers en na de oplevering door een volgende groep of de opleiding beheerd kunnen worden.
 
-```text
-1. Maak een groepsrepo op basis van deze blueprint.
-2. Vul alle documentatie aan met jullie eigen omgeving.
-3. Gebruik issues voor taken, vragen, support, incidenten en changes.
-4. Bewaar diagrammen in diagrams/ en screenshots in images/.
-5. Bewaar configuratievoorbeelden in configs/, maar nooit secrets.
-6. Zorg dat de repo op het einde jullie technische bewijsdossier is.
-```
+Ongeacht het gekozen project levert elke groep:
 
-Wat niet gedocumenteerd, getest of gelogd is, telt beperkt of niet mee.
+- een gevalideerde behoefteanalyse en afgebakende scope;
+- een architectuur-, netwerk- en resourceplan;
+- een veilige, reproduceerbare implementatie op Smith;
+- monitoring, logging, back-up en een geteste herstelprocedure;
+- beheer- en gebruikersdocumentatie;
+- een gebruikerstest of realistisch evenement;
+- een overdraagbare einddemo en individueel technisch gesprek.
 
-## Waarop werken jullie?
-
-Elke groep krijgt een eigen virtuele labo-omgeving:
+## Platformgrens
 
 ```text
-Fysieke Proxmoxcluster opleiding
-└── Doos-Proxmox groep X
-    ├── OPNsense
-    │   ├── WAN: verbinding naar buiten/opleidingsnetwerk
-    │   └── LAN: intern groepsnetwerk
-    ├── pve-x-01
-    ├── pve-x-02
-    └── pve-x-03
+Opleidingsnetwerk / internet
+            │
+            ▼
+  gedeelde netwerkdiensten
+            │
+            ▼
+     Proxmox-node Smith
+       ├── pool groep-01 → VM's project A
+       ├── pool groep-02 → VM's project B
+       └── pool groep-…  → VM's project …
 ```
 
-De docent beheert de fysieke Proxmoxcluster en de onderliggende doos-Proxmox. Studenten krijgen daar geen beheerrechten op.
+Studenten beheren uitsluitend hun toegewezen VM's, accounts en applicaties. Wijzigingen aan Smith zelf, gedeelde storage, switching, VLANs, DNS, reverse proxy, firewall of publieke bereikbaarheid verlopen via een change request en moeten vooraf goedgekeurd zijn.
 
-De hardware, de Proxmox-basisomgeving, automatische backups, reverse proxy, VPN, SSO en NetBox zijn bij de start operationeel. Jullie bouwen die onderdelen niet opnieuw. Jullie gebruiken en valideren ze, melden afwijkingen en beheren de workloads die jullie erop plaatsen.
+## Starten
 
-Jullie beheren binnen de afgesproken scope:
+1. Lees [Start hier](docs/00-start-here.md), de [praktische afspraken](praktische-afspraken.md) en de [spelregels](spelregels.md).
+2. Vul [groepsindeling.md](groepsindeling.md) in.
+3. Verken de [projectcatalogus](projecten/README.md) en laat de projectfiche toewijzen of goedkeuren.
+4. Werk het [projectcharter](docs/templates/projectcharter-template.md) en het [resourcebudget](docs/templates/resourcebudget-template.md) uit vóór de eerste VM wordt aangemaakt.
+5. Maak issues aan voor analyse, ontwerp, realisatie, tests, documentatie en overdracht.
 
-- toegewezen netwerk-, rechten- en firewallconfiguratie voor de eigen workloads;
-- toegewezen resources op het Proxmox-cluster;
-- VM's, containers, netwerken en services binnen jullie cluster;
-- documentatie, changes, incidenten en bewijsvoering.
+## Handboek
 
-Alle verkeer van de Proxmox-nodes en services moet via OPNsense verlopen. De onderliggende virtuele bekabeling mag niet aangepast of omzeild worden.
-
-## Project kiezen
-
-Alle mogelijke studentenprojecten staan uitsluitend in [backlog.md](backlog.md). Kies samen met de docent één haalbaar project en maak daarna issues voor ontwerp, uitvoering, tests, documentatie en overdracht.
-
-De omgeving is beperkt: reken op drie virtuele Proxmox-nodes met ongeveer 8 GB RAM per node. Kies dus bewust voor lichte VM's, LXC-containers of Docker-containers. Zware enterprise-stacks zijn alleen verdedigbaar als je resource-impact correct aantoont.
-
-## Start hier
-
-Begin met [docs/00-start-here.md](docs/00-start-here.md).
-
-Lees daarna zeker:
-
-- [praktische-afspraken.md](praktische-afspraken.md)
-- [spelregels.md](spelregels.md)
-- [github-werkwijze.md](github-werkwijze.md)
-- [roadmap.md](roadmap.md)
-- [evaluatie.md](evaluatie.md)
+- [Platformarchitectuur](docs/01-labo-architectuur.md)
+- [Toegang en accounts](docs/02-toegang-en-accounts.md)
+- [Netwerk, firewall en publicatie](docs/03-netwerk-en-firewall.md)
+- [Werken op Smith](docs/04-smith-proxmox.md)
+- [Netwerk- en dataflowplan](docs/05-netwerkplan.md)
+- [Services ontwerpen en beheren](docs/06-services.md)
+- [Back-up en restore](docs/07-backup-en-restore.md)
+- [Monitoring en logging](docs/08-monitoring-en-logging.md)
+- [Security en hardening](docs/09-security-hardening.md)
+- [Documentatiestandaard](docs/10-documentatie-template.md)
 
 ## Evaluatie in het kort
 
-De evaluatie kijkt niet alleen naar "het werkt".
-
 | Domein | Gewicht |
 |---|---:|
-| Technische realisatie en integratie | 30% |
-| Security, rechtenbeheer en netwerkafscherming | 20% |
+| Dienst en technische realisatie | 25% |
+| Architectuur, netwerk en security | 20% |
 | Automatisering en reproduceerbaarheid | 15% |
-| Operations, observability en resilience | 20% |
-| Documentatie, samenwerking en individuele bijdrage | 15% |
+| Operations, betrouwbaarheid en herstel | 20% |
+| Projectwerking, documentatie en communicatie | 20% |
 
-Een werkende oplossing zonder correcte uitleg, documentatie, securityconfiguratie of testbewijs is niet automatisch voldoende.
+De volledige rubric staat in [evaluatie.md](evaluatie.md). Een oplossing die alleen tijdens de einddemo werkt, is geen beheerde productiedienst.
 
-## Geen secrets in GitHub
+## Bewijs en secrets
 
-Plaats nooit wachtwoorden, tokens, private keys, certificaatsleutels, recovery codes of echte gedeelde credentials in deze repository. Gebruik placeholders zoals:
-
-```text
-<SECRET_IN_BITWARDEN>
-<GROUP_VAULT_ITEM>
-```
+Deze repo is het technische bewijsdossier van de groep. Gebruik issues, pull requests, diagrammen, testresultaten en beslissingsverslagen. Plaats nooit wachtwoorden, tokens, private keys, recovery codes of ongeschoonde configuratie-exports in Git. Gebruik bijvoorbeeld `<SECRET_IN_VAULT>`.

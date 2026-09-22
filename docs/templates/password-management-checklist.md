@@ -14,7 +14,7 @@
 
 | Categorie | Voorbeeld | Locatie |
 |---|---|---|
-| Beheeraccounts | Proxmox/OPNsense | `<GROUP_VAULT_ITEM>` |
+| Beheeraccounts | Proxmox/applicatie | `<GROUP_VAULT_ITEM>` |
 | Service-accounts | applicaties en automatisering | `<GROUP_VAULT_ITEM>` |
-| Platformtoegang | VPN/Proxmox | `<GROUP_VAULT_ITEM_OF_DOOR_DOCENT_BEHEERD>` |
+| Platformtoegang | Proxmox/beheerpad | `<GROUP_VAULT_ITEM_OF_DOOR_DOCENT_BEHEERD>` |
 | Recovery | herstelcodes | `<GROUP_VAULT_ITEM>` |

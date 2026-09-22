@@ -1,59 +1,38 @@
-# Toegang en accounts
+# Toegang, accounts en Proxmox-scope
 
-## Accounts
+## Persoonlijke toegang
 
-De docent deelt de initiële toegangsmethoden mee. Noteer in jullie documentatie alleen niet-gevoelige informatie.
+Iedere student gebruikt een persoonlijk account. Accounts, MFA-codes en SSH-private keys worden nooit gedeeld. Gedeelde applicatiecredentials zijn uitzonderlijk en worden beheerd via de afgesproken vault.
 
-| Systeem | Toegang | Opmerking |
-|---|---|---|
-| Bestaande VPN | `<DOOR_DOCENT>` | Verplichte route voor beheer |
-| OPNsense | `<DOOR_DOCENT/INDIEN_NODIG>` | Alleen binnen toegewezen beheerrechten |
-| Proxmox-cluster | `<DOOR_DOCENT>` | Beperkte groepsscope |
-| Reverse proxy | `<AANVRAAGPROCEDURE>` | Onboarding, geen herinstallatie |
-| Bitwarden | `<GROEPSVAULT>` | Secrets buiten GitHub |
+| Systeem | Account/rol | Bereik | Eigenaar |
+|---|---|---|---|
+| Proxmox | `<PERSOONLIJK_ACCOUNT>` | `<EIGEN_POOL>` | opleiding |
+| VM-beheer | `<SSH_ACCOUNT>` | eigen VM's | groep |
+| Applicatie | `<ROL>` | volgens project | groep |
+| Vault | `<GROEPSCOLLECTIE>` | projectsecrets | groep/opleiding |
 
-## Waar mag je inloggen?
+## Proxmox-rechtentest
 
-Toegestaan:
+Voer samen met de docent een positieve en negatieve test uit:
 
-- OPNsense van je eigen groep;
-- Proxmox-nodes van je eigen groep;
-- VM's en containers van je eigen groep;
-- services die je zelf beheert.
+- eigen bestaande VM bekijken, starten en stoppen;
+- binnen quota een kleine test-VM aanmaken;
+- eigen console openen;
+- geen VM van een andere groep bekijken of wijzigen;
+- geen node-, storage-, netwerk- of datacenterinstellingen wijzigen;
+- geen VM buiten de eigen pool verplaatsen;
+- test-VM na validatie gecontroleerd verwijderen.
 
-Niet toegestaan:
+Meld een te ruim recht onmiddellijk. Gebruik het niet om verder te verkennen.
 
-- doos-Proxmox;
-- fysieke Proxmoxcluster;
-- omgevingen van andere groepen;
-- netwerken buiten de opdracht.
+## OS- en applicatieaccounts
 
-## Secrets
+- Beperk rechtstreeks rootgebruik en gebruik persoonlijke sudo-accounts.
+- Gebruik servicespecifieke accounts zonder interactieve login.
+- Leg rollen en intrekkingsprocedure vast.
+- Verwijder testaccounts na acceptatie.
+- Roteer credentials bij overdracht of vermoeden van lek.
 
-Nooit in GitHub:
+## Noodtoegang
 
-- wachtwoorden;
-- tokens;
-- private keys;
-- certificaatsleutels;
-- recovery codes;
-- exports met secrets.
-
-Gebruik placeholders:
-
-```text
-<SECRET_IN_BITWARDEN>
-<GROUP_VAULT_ITEM>
-```
-
-## Adminacties loggen
-
-Log betekenisvolle adminacties via:
-
-- issue;
-- commit;
-- change request;
-- changelog-entry;
-- relevante documentatie.
-
-Bij verloren toegang: maak een supportticket met context, impact, reeds geteste stappen en gevraagde hulp.
+Documenteer wie bij verlies van toegang, incident of afwezigheid mag ingrijpen. Een break-glasscredential staat nooit in Git en het gebruik ervan wordt gelogd en achteraf geëvalueerd.

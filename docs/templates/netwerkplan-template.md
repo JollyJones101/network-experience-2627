@@ -1,48 +1,48 @@
-# Netwerkplan template
+# Netwerk- en dataflowplan
 
 ## Metadata
 
 | Veld | Waarde |
 |---|---|
-| Groep | `<GROEP_NUMMER>` |
-| Auteur(s) | `<NAMEN>` |
+| Groep/project | `<GROEP_EN_PROJECT>` |
+| Proxmox-pool | `<POOL>` |
+| Auteur/reviewer | `<NAMEN>` |
 | Laatst bijgewerkt | `<DATUM>` |
-| Gekoppelde issues | `<ISSUES>` |
 
-## Subnetten
+## Netwerken
 
-| Netwerk | CIDR | Gateway | Doel |
-|---|---|---|---|
-| LAN | `<CIDR>` | `<IP>` | beheer en interne services |
-| VPN | `<CIDR>` | `<IP>` | remote access |
-| SDN VNet | `<CIDR>` | `<IP>` | interne VM/CT-segmentatie |
-
-## Services
-
-| Service | Host | IP | Poorten | Bereikbaarheid |
+| Zone/VLAN | CIDR | Gateway | Doel | Beheerder |
 |---|---|---|---|---|
-| `<SERVICE>` | `<HOST>` | `<IP>` | `<POORTEN>` | `<LAN/VPN/WAN>` |
+| `<ZONE>` | `<CIDR>` | `<IP>` | `<DOEL>` | `<ROL>` |
 
-## Firewallzones en regels
+## Workloads
 
-| Bron | Bestemming | Poort/protocol | Actie | Reden | Test |
+| VMID | Hostnaam | Functie | IP/DNS | Luisterende poorten | Eigenaar |
+|---:|---|---|---|---|---|
+| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<WAARDE>` | `<POORTEN>` | `<ROL>` |
+
+## Gegevensstromen
+
+| Bron | Bestemming | Protocol/poort | Data | Authenticatie | Reden |
 |---|---|---|---|---|---|
-| `<BRON>` | `<BESTEMMING>` | `<POORT>` | `<ALLOW/DENY>` | `<REDEN>` | `<BEWIJS>` |
+| `<BRON>` | `<DOEL>` | `<PROTO/POORT>` | `<CLASSIFICATIE>` | `<METHODE>` | `<WAAROM>` |
+
+## Gedeelde wijzigingen
+
+| Aanvraag | Eigenaar | Status | Change-issue |
+|---|---|---|---|
+| `<DNS_FIREWALL_PROXY_OF_ANDERS>` | `<ROL>` | `<STATUS>` | `<LINK>` |
 
 ## Diagram
 
-Link naar diagram in `diagrams/`:
+`<LINK_NAAR_DIAGRAM>`
 
-```text
-<DIAGRAM_LINK>
-```
+## Tests
 
-## Testplan
-
-- [ ] LAN-connectiviteit getest.
-- [ ] DNS getest.
-- [ ] Toegang via de bestaande VPN getest.
-- [ ] Onboarded service via de bestaande reverse proxy getest.
-- [ ] Automatiserings- en monitoringpaden getest.
-- [ ] SDN-connectiviteit getest.
-- [ ] Firewallblokkade getest.
+- [ ] Bedoelde gebruikersflow werkt.
+- [ ] Niet-toegelaten bron wordt geblokkeerd.
+- [ ] Beheerpad werkt alleen voor beheerders.
+- [ ] Datadienst is niet rechtstreeks voor gebruikers bereikbaar.
+- [ ] Monitoring- en back-uppad werken.
+- [ ] Onnodig uitgaand verkeer is beperkt.
+- [ ] DNS, tijd en certificaat zijn gevalideerd.

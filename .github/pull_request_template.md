@@ -38,5 +38,5 @@ Closes `<ISSUE_NUMMER>`
 - [ ] Doel is duidelijk.
 - [ ] Testbewijs is aanwezig.
 - [ ] Security-impact is bekeken.
+- [ ] Resource-, privacy- en productie-impact zijn bekeken.
 - [ ] Rollback of herstel is duidelijk waar relevant.
-

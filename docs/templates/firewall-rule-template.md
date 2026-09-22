@@ -3,7 +3,7 @@
 | Veld | Waarde |
 |---|---|
 | Regelnaam | `<NAAM>` |
-| Laag | `<OPNSENSE/PROXMOX/HOST>` |
+| Laag | `<GEDEELD_NETWERK/PROXMOX/HOST/APPLICATIE>` |
 | Bron | `<BRON>` |
 | Bestemming | `<BESTEMMING>` |
 | Poort/protocol | `<POORT_PROTOCOL>` |
@@ -25,4 +25,3 @@
 ## Rollback
 
 `<HOE_REGEL_VERWIJDEREN_OF_TERUGDRAAIEN>`
-

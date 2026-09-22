@@ -1,20 +1,30 @@
 # Roadmap
 
-Deze roadmap geeft een algemene 12-wekenplanning, onafhankelijk van het gekozen project. De docent kan deadlines en accenten aanpassen.
+De standaardplanning duurt twaalf weken. De projectfiches voegen projectspecifieke mijlpalen toe.
 
-| Week | Thema | Resultaat |
-|---:|---|---|
-| 1 | Oriëntatie | Groepsrepo, toegang, rollen en projectkeuze |
-| 2 | Analyse | Doelgroep, requirements, scope en acceptatiecriteria |
-| 3 | Ontwerp | Architectuur, netwerkpad, resources en risico's |
-| 4 | Proof of concept | Kleine werkende proef en technische evaluatie |
-| 5 | Basisrealisatie | Eerste bruikbare versie van het project |
-| 6 | Integratie | Koppeling met relevante bestaande platformdiensten |
-| 7 | Security | Rechten, firewall, secrets en negatieve toegangstests |
-| 8 | Beheer | Monitoring, logging, updates en foutafhandeling |
-| 9 | Automatisering | Minstens één zinvolle beheerhandeling vereenvoudigd |
-| 10 | Gebruikerstest | Feedback verzamelen en verbeteringen uitvoeren |
-| 11 | Stabilisatie | Hersteltest, runbook, overdracht en open risico's |
-| 12 | Eindoplevering | Demo, documentatie en individuele technische bevraging |
+| Week | Fase | Verwacht resultaat | Gate |
+|---:|---|---|---|
+| 1 | Intake | toegang getest, groep gevormd, project verkend | — |
+| 2 | Charter | gebruikers, probleem, scope, rollen en succescriteria | charter goedkeuren |
+| 3 | Ontwerp | architectuur, netwerk, dataflow, dreigingen en resourcebudget | — |
+| 4 | Proof of concept | grootste technische onzekerheid getest; keuzes vastgelegd | architectuur goedkeuren |
+| 5 | Fundament | VM's reproduceerbaar ingericht; basisdienst intern bruikbaar | — |
+| 6 | Kernfunctionaliteit | Must-have gebruikersflows werken | — |
+| 7 | Security en privacy | rollen, hardening, secrets en negatieve tests | productie-intake |
+| 8 | Operations | monitoring, logging, back-up, update- en incidentrunbook | — |
+| 9 | Automatisering | herhaalbare deployment of zinvolle beheertaak geautomatiseerd | — |
+| 10 | Gebruikerstest | test met representatieve gebruikers of goedgekeurde dry-run | gebruikeracceptatie |
+| 11 | Stabilisatie | bevindingen verwerkt; restore/rollback en capaciteit getest | — |
+| 12 | Overdracht | demo, dossier, runbooks, cleanup en individuele verdediging | eindoplevering |
 
-Gebruik GitHub-issues om de planning te verfijnen. Elke betekenisvolle wijziging bevat testbewijs en bijgewerkte documentatie.
+## Wekelijks bewijs
+
+Elke week zijn minstens zichtbaar:
+
+- bijgewerkte issues en planning;
+- één inhoudelijke beslissing of technisch resultaat;
+- test- of validatiebewijs;
+- nieuwe risico's, blokkades of wijzigingen;
+- een korte reflectie op resourcegebruik en volgende stap.
+
+Een mijlpaal is pas klaar wanneer werking, documentatie en bewijs samen aanwezig zijn.

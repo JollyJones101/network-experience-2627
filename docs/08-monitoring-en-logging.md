@@ -1,32 +1,34 @@
-# Monitoring en logging
+# Monitoring, logging en servicelevels
 
-Monitoring en logging tonen dat jullie omgeving beheerd wordt, niet alleen geinstalleerd is.
+Observeer wat gebruikers en beheerders nodig hebben. Elk signaal heeft een doel, eigenaar en reactie.
 
-## Algemene aandachtspunten
+## Vier lagen
 
-Monitoring kan zicht geven op:
+1. **Gebruikerservaring:** kan de belangrijkste flow worden uitgevoerd?
+2. **Applicatie:** fouten, wachtrij, tick rate, ingestie of jobspecifieke metrics.
+3. **Systeem:** CPU, RAM, disk, I/O, processen en tijd.
+4. **Afhankelijkheden:** DNS, certificaat, database, externe API en back-up.
 
-- kritieke services;
-- opslag en resourcegebruik;
-- relevante logs.
+## Minimale alertmatrix
 
-Een bruikbare alert heeft een eigenaar, ernstniveau, drempel en reactieprocedure. SLI's en SLO's kunnen helpen om betrouwbaarheid meetbaar te maken.
+| Signaal | Drempel/conditie | Ernst | Eigenaar | Actie/runbook |
+|---|---|---|---|---|
+| Dienst onbereikbaar | `<N_METINGEN>` | hoog | `<ROL>` | `<LINK>` |
+| Capaciteit | `<GRENS_EN_DUUR>` | middel | `<ROL>` | `<LINK>` |
+| Projectspecifiek | `<SLO>` | `<ERNST>` | `<ROL>` | `<LINK>` |
+| Back-up/check faalt | `<CONDITIE>` | hoog | `<ROL>` | `<LINK>` |
 
-## Mogelijke tools
+Test alerts gecontroleerd. Een alert die niemand ontvangt of waarvoor geen actie bestaat, is geen bruikbare alert.
 
-- Uptime Kuma;
-- Grafana/Prometheus als resources dat toelaten;
-- Zabbix;
-- Wazuh alleen als de resource-impact verantwoord is;
-- lichte syslog-oplossing;
-- ingebouwde Proxmox- en OPNsense-logs.
+## Logging en privacy
 
-## Documentatie
+- Log beveiligings- en beheeracties die nodig zijn voor diagnose.
+- Masker secrets en minimaliseer persoonsgegevens.
+- Stel rotatie en retentie in om diskuitputting te voorkomen.
+- Beperk toegang; logs zijn geen publieke dataset.
+- Synchroniseer tijd zodat events correleerbaar zijn.
+- Documenteer wat bewust niet wordt gelogd.
 
-Documenteer:
+## Servicelevels
 
-- dashboards of checks;
-- alerts indien gebruikt;
-- incidentanalyse;
-- screenshots of exports zonder secrets;
-- wat je doet bij een waarschuwing.
+Formuleer twee of drie meetbare SLI's, bijvoorbeeld beschikbaarheid, responstijd, job-successratio, TPS, ingestielatency of hersteltijd. Kies realistische SLO's voor de onderwijscontext en rapporteer het resultaat eerlijk.

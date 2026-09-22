@@ -1,45 +1,41 @@
-# Server template
+# VM-template
 
-## Metadata
+## Identiteit
 
 | Veld | Waarde |
 |---|---|
-| Naam | `<SERVER_NAAM>` |
-| Type | `<VM/LXC>` |
-| Eigenaar | `<NAAM>` |
-| Hostnode | `<PVE_NODE>` |
-| Laatst bijgewerkt | `<DATUM>` |
-
-## Doel
-
-`<BESCHRIJF_DOEL>`
+| VMID en naam | `<ID_NAAM>` |
+| Proxmox-pool | `<POOL>` |
+| Omgeving/functie | `<PROD_TEST_FUNCTIE>` |
+| Primaire/back-upeigenaar | `<ROLLEN>` |
+| Aanmaak- en verwijderdatum | `<DATUM_BESLUIT>` |
 
 ## Resources
 
-| CPU | RAM | Disk | OS |
-|---|---|---|---|
-| `<CPU>` | `<RAM>` | `<DISK>` | `<OS>` |
+| vCPU | RAM | Disk | OS/image | Verwachte piek |
+|---:|---:|---:|---|---|
+| `<N>` | `<GB>` | `<GB>` | `<VERSIE_BRON>` | `<METING>` |
 
 ## Netwerk
 
-| Interface | Netwerk | IP | Gateway |
-|---|---|---|---|
-| `<IFACE>` | `<NETWERK>` | `<IP>` | `<GATEWAY>` |
+| Interface | Zone/VLAN | IP/DNS | Gateway | Firewallprofiel |
+|---|---|---|---|---|
+| `<IFACE>` | `<ZONE>` | `<WAARDE>` | `<IP>` | `<PROFIEL>` |
 
-## Beheer
+## Lifecycle
 
-- Beheeraccount: `<ACCOUNT_OF_ROL>`
-- Secrets: `<SECRET_IN_BITWARDEN>`
-- Firewallprofiel: `<SECURITY_GROUP>`
-
-## Backup
-
-`<BACKUP_AFSPRAAK>`
+- Deployment: `<SCRIPT_PLAYBOOK_OF_STAPPEN>`
+- Patchvenster: `<AFSPRAAK>`
+- Back-upklasse: `<KLASSE_OF_GEEN_MET_REDEN>`
+- Monitoring: `<CHECKS_EN_ALERTS>`
+- Secrets: `<VAULTREFERENTIE>`
+- Stop/cleanup: `<PROCEDURE>`
 
 ## Validatie
 
-- [ ] Host bereikbaar.
-- [ ] Service bereikbaar.
-- [ ] Firewall getest.
-- [ ] Backup getest indien relevant.
-
+- [ ] Baseline hardening en updates uitgevoerd.
+- [ ] Alleen noodzakelijke services luisteren.
+- [ ] Positieve en negatieve netwerktest uitgevoerd.
+- [ ] Resourcegebruik gemeten.
+- [ ] Monitoring en back-up getest.
+- [ ] Rebuild- of herstelpad is gedocumenteerd.

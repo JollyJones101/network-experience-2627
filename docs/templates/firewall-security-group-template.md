@@ -5,7 +5,7 @@
 | Veld | Waarde |
 |---|---|
 | Naam | `<SECURITY_GROUP>` |
-| Laag | `<CLUSTER/NODE/VM>` |
+| Laag | `<GEDEELD_NETWERK/PROXMOX/VM/HOST/APPLICATIE>` |
 | Doel | `<DOEL>` |
 | Eigenaar | `<NAAM>` |
 
@@ -26,5 +26,6 @@
 - [ ] Toegelaten verkeer werkt.
 - [ ] Ongewenst verkeer wordt geblokkeerd.
 - [ ] Logging gecontroleerd.
+- [ ] Regel is beperkt tot de bedoelde bron en bestemming.
+- [ ] Tijdelijke regel heeft een eigenaar en vervaldatum.
 - [ ] Documentatie bijgewerkt.
-

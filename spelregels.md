@@ -1,37 +1,42 @@
-# Spelregels
+# Spelregels voor Smith
 
-Deze spelregels beschermen de labo-omgeving, het opleidingsnetwerk en de evaluatiekwaliteit.
+Deze regels beschermen de productieomgeving, het campusnetwerk en de gegevens van gebruikers.
+
+## Alleen binnen jullie scope
+
+Studenten mogen binnen de toegewezen Proxmox-pool:
+
+- VM's maken, configureren, starten, stoppen en verwijderen;
+- besturingssystemen en projectsoftware beheren;
+- eigen applicatieaccounts en rollen beheren;
+- goedgekeurde back-up-, monitoring- en automatiseringskoppelingen gebruiken.
+
+Alles buiten die pool of buiten het toegewezen netwerk blijft buiten scope.
 
 ## Absoluut niet toegestaan
 
-- Inloggen op of wijzigen aan de onderliggende doos-Proxmox.
-- Virtuele bekabeling aanpassen zonder toestemming.
-- OPNsense bypassen door nodes of services rechtstreeks op WAN te hangen.
-- Het campusnetwerk of opleidingsnetwerk verstoren.
-- DHCP aanbieden op netwerken waar dat niet expliciet mag.
-- Wachtwoorden, tokens, private keys, certificaatsleutels of recovery codes in GitHub plaatsen.
-- Destructieve acties uitvoeren zonder rollbackplan of overleg.
-- Securityregels vervangen door "allow all" zonder motivatie en test.
-
-Overtredingen kunnen gevolgen hebben voor de evaluatie.
+- instellingen van Smith, gedeelde storage, bridges of andere pools wijzigen;
+- workloads, verkeer of accounts van andere groepen bekijken of testen;
+- rogue DHCP, router advertisements, spanning tree of routing aanbieden;
+- het campusnetwerk scannen, belasten of omzeilen;
+- een dienst publiek maken zonder goedgekeurde change;
+- secrets, persoonsgegevens of ongeschoonde exports in Git opslaan;
+- illegale software, auteursrechtelijk materiaal of ongeautoriseerde game-images verspreiden;
+- mining, cryptomining, botnets, offensieve tooling buiten een goedgekeurde geïsoleerde CTF-scope;
+- destructieve of belastende tests uitvoeren zonder plan, tijdslot en akkoord.
 
 ## Verplicht
 
-- Alle beheerwijzigingen worden gelogd via issues, commits, change requests of documentatie.
-- Fouten en incidenten worden gemeld. Fouten maken mag; fouten verzwijgen niet.
-- Alle verkeer van de omgeving loopt via OPNsense.
-- Secrets worden beheerd via Bitwarden of een door de docent goedgekeurd alternatief.
-- Beperkte Proxmox-accounts worden getest en gebruikt waar passend.
-- Firewallregels worden gemotiveerd en getest.
-- Exacte IP-ranges, logins en toegangsmethoden worden door de docent bevestigd.
-- Bestaande gedeelde platformdiensten worden niet vervangen of opnieuw geïnstalleerd zonder goedgekeurde change.
+- least privilege voor Proxmox, OS en applicaties;
+- een hostfirewall en doelgerichte netwerkregels;
+- ondersteunde software en tijdige security-updates;
+- unieke serviceaccounts en secrets in de afgesproken vault;
+- monitoring van beschikbaarheid en resourcegebruik;
+- back-up van niet-reproduceerbare data en minstens één hersteltest;
+- logging van changes, incidenten en beheerhandelingen;
+- een actueel resourcebudget en VM-register;
+- verwijdering of overdracht van testaccounts en tijdelijke data na afloop.
 
-## Veilig testen
+## Stopregel
 
-Gebruik gecontroleerde testscenario's. Simuleer uitval of destructieve acties alleen als dat veilig is en binnen de opdracht past. Noteer vooraf:
-
-- doel van de test;
-- impact;
-- rollbackplan;
-- verwachte uitkomst;
-- validatie.
+Stop de actie en verwittig de docent bij onverwachte impact op Smith of het campusnetwerk, vermoeden van datalek, verlies van beheercontrole, plots hoog resourcegebruik of twijfel over toestemming. Snel en transparant melden weegt zwaarder dan een fout verbergen.

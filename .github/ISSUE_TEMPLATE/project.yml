@@ -6,9 +6,9 @@ body:
   - type: textarea
     id: context
     attributes:
-      label: Context
-      description: Wat moet er gebeuren en waarom?
-      placeholder: Beschrijf de taak.
+      label: Waarde en context
+      description: Voor welke gebruiker of projectvereiste is dit nodig?
+      placeholder: Beschrijf het gewenste resultaat, niet alleen de activiteit.
     validations:
       required: true
   - type: textarea
@@ -21,15 +21,15 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: Verwachte uitkomst
-      placeholder: Wanneer is dit klaar?
+      label: Acceptatiecriteria
+      placeholder: Formuleer concrete, testbare voorwaarden.
     validations:
       required: true
   - type: textarea
     id: validation
     attributes:
-      label: Test of validatie
-      placeholder: Hoe controleren jullie dat het werkt?
+      label: Positieve en negatieve test
+      placeholder: Hoe bewijzen jullie wat wel en niet mag werken?
     validations:
       required: true
   - type: textarea
@@ -39,4 +39,3 @@ body:
       placeholder: Welke bestanden worden bijgewerkt?
     validations:
       required: true
-

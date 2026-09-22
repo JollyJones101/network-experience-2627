@@ -1,45 +1,48 @@
-# Technische documentatie
+# Documentatiestandaard
 
-Gebruik deze structuur voor technische documentatie in jullie repo.
+Schrijf voor een opvolger die het project niet heeft gebouwd. Documentatie beschrijft zowel normale werking als falen.
 
-## Structuur
+## Technisch ontwerp
 
 ```text
-# Titel
-
-## Doel
-Wat lost dit op?
-
-## Context
-Waar draait dit? Welke afhankelijkheden zijn er?
-
-## Ontwerpkeuze
-Waarom is deze oplossing gekozen?
-
-## Stappen
-Welke stappen zijn uitgevoerd?
-
-## Validatie
-Hoe is getest dat het werkt?
-
-## Rollback
-Hoe keer je veilig terug?
-
-## Screenshots/logs
-Welke bewijsstukken zijn toegevoegd?
-
-## Veelgemaakte fouten
-Wat ging mis en hoe is dat opgelost?
-
-## Metadata
-Datum, auteur, reviewers, gekoppelde issues.
+# Titel en eigenaar
+## Doel en gebruikers
+## Context en afhankelijkheden
+## Architectuur, netwerk en dataflow
+## Beslissingen en alternatieven
+## Resources en capaciteit
+## Security en privacy
+## Deployment en configuratie
+## Monitoring en servicelevels
+## Back-up, restore en rollback
+## Tests en bewijs
+## Gekende beperkingen
+## Metadata: datum, auteur, reviewers, issues
 ```
+
+## Runbook
+
+Een runbook bevat:
+
+- trigger of symptoom;
+- voorwaarden en vereiste toegang;
+- veilige, genummerde stappen;
+- verwachte output en beslismomenten;
+- escalatie en stopconditie;
+- validatie en terugkeer naar normale toestand;
+- cleanup en registratie achteraf.
+
+Maak minstens runbooks voor deployment/update, dagelijks beheer, veelvoorkomende storing, credentialrotatie, back-up/restore en gecontroleerd uitschakelen.
+
+## Beslissingslog
+
+Leg belangrijke technische keuzes kort vast met context, opties, beslissing, argumenten, gevolgen en datum. Vermijd documenten die alleen beschrijven wat werd geïnstalleerd.
 
 ## Regels
 
-- Schrijf reproduceerbaar.
-- Plaats geen secrets.
-- Gebruik placeholders.
-- Link naar issues, PR's en changelog.
-- Noteer ook mislukte pogingen als ze relevant zijn.
-
+- Schrijf reproduceerbaar en test commando's.
+- Gebruik placeholders voor secrets en gevoelige waarden.
+- Link naar issues, pull requests en changelog.
+- Bewijs met tekst/export waar dat beter leesbaar is dan screenshots.
+- Noteer relevante mislukte hypotheses en wat ervan geleerd is.
+- Werk documenten bij in dezelfde wijziging als de configuratie.

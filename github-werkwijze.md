@@ -45,7 +45,7 @@ Schrijf commits kort en duidelijk:
 ```text
 docs: voeg netwerkplan voor groep 4 toe
 fix: corrigeer firewallregel voor webshare
-change: documenteer VPN peer intrekking
+change: publiceer Minecraft via goedgekeurde netwerkroute
 ```
 
 ## Pull requests
@@ -69,4 +69,3 @@ Gebruik pull requests voor grotere wijzigingen of review door groepsleden. Een P
 ## Changelog
 
 [changelog.md](changelog.md) bevat belangrijke wijzigingen. De GitHub Action vult bij gesloten issues automatisch een entry aan. Manuele aanvullingen mogen ook.
-

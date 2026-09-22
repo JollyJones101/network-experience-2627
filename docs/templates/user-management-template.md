@@ -1,39 +1,32 @@
-# User management template
-
-## Gebruikers
-
-| Gebruiker | Type | Doel | Secretlocatie |
-|---|---|---|---|
-| `<USER>` | `<ADMIN/BEPERKT>` | `<DOEL>` | `<SECRET_IN_BITWARDEN>` |
+# Accounts- en rollenmatrix
 
 ## Rollen
 
-| Rol | Rechten | Reden |
-|---|---|---|
-| `<ROL>` | `<RECHTEN>` | `<WAAROM>` |
-
-## Pools
-
-| Pool | Resources | Eigenaar |
-|---|---|---|
-| `<POOL>` | `<VM_CT_LIJST>` | `<NAAM>` |
-
-## ACL's
-
-| Pad | Gebruiker/rol | Rechten | Reden |
+| Rol | Toegestane acties | Verboden acties | Goedkeurder |
 |---|---|---|---|
-| `<ACL_PAD>` | `<USER_OF_ROL>` | `<RECHTEN>` | `<REDEN>` |
+| `<ROL>` | `<ACTIES>` | `<ACTIES>` | `<ROL>` |
 
-## Testresultaten beperkte account
+## Accounts en lifecycle
 
-- [ ] Kan eigen VM/container maken.
-- [ ] Kan eigen VM/container starten.
-- [ ] Kan eigen VM/container stoppen.
-- [ ] Kan eigen VM/container verwijderen.
-- [ ] Kan geen andere VM's beheren.
-- [ ] Kan geen clusterinstellingen aanpassen.
+| Account/serviceaccount | Rol | Eigenaar | MFA/key | Aanmaak | Review/verval | Secretlocatie |
+|---|---|---|---|---|---|---|
+| `<ACCOUNT>` | `<ROL>` | `<NAAM>` | `<METHODE>` | `<DATUM>` | `<DATUM>` | `<VAULTREF_OF_NVT>` |
 
-## Bewijs
+## Proxmox-scope
 
-`<LINK_NAAR_SCREENSHOTS_OF_TESTSTAPPEN>`
+| Subject | Pad/pool | Rol | Reden |
+|---|---|---|---|
+| `<GROEP_OF_USER>` | `<POOL>` | `<ROL>` | `<REDEN>` |
 
+## Rechtentests
+
+- [ ] Gewone gebruiker kan de bedoelde gebruikersflow.
+- [ ] Gewone gebruiker kan geen moderator-/adminactie.
+- [ ] Operator kan beheren maar geen OS- of platformadminactie.
+- [ ] Serviceaccount kan alleen de noodzakelijke machineactie.
+- [ ] Groepslid kan eigen VM's maar geen andere pool beheren.
+- [ ] Ingetrokken account of credential werkt niet meer.
+
+## Onboarding, review en offboarding
+
+`<STAPPEN_MET_EIGENAAR_EN_BEWIJS>`

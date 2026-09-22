@@ -1,37 +1,46 @@
-# Security hardening
+# Security, privacy en hardening
 
-Security geldt voor elk gekozen project.
+## Baseline voor elke VM
 
-## Verwachtingen
+- ondersteund OS en alleen noodzakelijke packages;
+- automatische of geplande security-updates met eigenaar;
+- persoonlijke SSH-sleutels, geen gedeeld rootwachtwoord;
+- sudo en serviceaccounts volgens least privilege;
+- hostfirewall met expliciet noodzakelijke poorten;
+- diensten luisteren alleen op bedoelde interfaces;
+- tijdsynchronisatie, logrotatie en diskmonitoring;
+- secrets buiten Git, images en shell history;
+- periodieke controle op ongebruikte accounts en services.
 
-- Updates plannen en documenteren.
-- SSH hardenen waar gebruikt.
-- Least privilege toepassen.
-- Proxmox user management gebruiken.
-- Bitwarden of goedgekeurd alternatief gebruiken.
-- bestaande VPN-toegang en routes op least privilege controleren.
-- OPNsense en Proxmox firewall combineren.
-- Logging controleren.
-- Certificaten en keys veilig beheren.
-- Geen secrets in GitHub.
+## Applicatie
 
-## Checklist
+- rollenmatrix en negatieve rechtentests;
+- MFA voor beheer waar beschikbaar;
+- veilige sessies, TLS en correcte proxy-instellingen;
+- inputvalidatie, rate limiting en beperkte foutdetails;
+- dependency- en imageupdates;
+- veilige credentialrotatie en intrekking;
+- dataminimalisatie, bewaartermijn en cleanup.
 
-- [ ] Rootgebruik beperkt.
-- [ ] Beperkte Proxmox-account getest.
-- [ ] Pools en ACL's gedocumenteerd.
-- [ ] OPNsense-regels gemotiveerd.
-- [ ] Proxmox security groups gebruikt.
-- [ ] Onboarded service heeft passende authenticatie.
-- [ ] Beheer- en automatiseringsinterfaces zijn niet onbeveiligd publiek bereikbaar.
-- [ ] VPN-toegang volgt de bestaande aanvraag- en intrekkingsprocedure.
-- [ ] Secrets staan in Bitwarden.
-- [ ] Backups en exports bevatten geen zichtbare secrets.
+## Threat model
 
-## Verboden
+Beschrijf minstens:
 
-- `allow all` als blijvende firewallstrategie.
-- Onnodige anonieme write-access op een onboarded service.
-- Onbeveiligde publieke beheer- of automatiseringsinterfaces.
-- Private keys of recovery codes in repo.
-- Bypass van OPNsense.
+1. waardevolle assets en gevoelige data;
+2. trustgrenzen en toegangspaden;
+3. vijf relevante dreigingen;
+4. preventie, detectie en herstel;
+5. resterend risico en eigenaar.
+
+Test alleen binnen de eigen projectscope. Een portscan of securitytest tegen Smith, campusdiensten of andere groepen is nooit impliciet toegestaan.
+
+## Pre-productiecheck
+
+- [ ] Beheerinterface niet publiek bereikbaar.
+- [ ] Standaardaccounts en -wachtwoorden verwijderd.
+- [ ] Rollen en geblokkeerde acties getest.
+- [ ] Netwerkregels minimaal en gedocumenteerd.
+- [ ] Secretscan op repo en artifacts uitgevoerd.
+- [ ] Back-updata en logs op gevoelige inhoud gecontroleerd.
+- [ ] Alerts voor mislukte login of relevante misbruikspatronen ingesteld.
+- [ ] Stop-, revoke- en incidentprocedure gekend.

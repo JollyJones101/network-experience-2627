@@ -2,6 +2,8 @@
 
 Een incident is een ongewenste verstoring, fout of beveiligingsprobleem in jullie omgeving. Incidenten worden niet verstopt, maar professioneel behandeld.
 
+Bij mogelijke impact op Smith, andere groepen, het campusnetwerk of persoonsgegevens: stop de risicovolle actie, beperk de impact zonder bewijs te wissen en verwittig onmiddellijk de docent of het afgesproken noodcontact. Wacht niet op een volledig oorzakenonderzoek.
+
 ## Incidentproces
 
 1. Detectie: wat is er opgemerkt?
@@ -12,7 +14,8 @@ Een incident is een ongewenste verstoring, fout of beveiligingsprobleem in julli
 6. Preventie: hoe vermijden jullie herhaling?
 7. Post-mortem: wat hebben jullie geleerd?
 
+Leg ook een tijdlijn, ernstniveau, communicatie en eigenaar van vervolgacties vast. Een post-mortem zoekt systeemverbeteringen en is geen schulddocument.
+
 ## Bewijs
 
 Gebruik logs, screenshots, testcommando's of monitoringdata. Verwijder of maskeer secrets.
-

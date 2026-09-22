@@ -1,40 +1,28 @@
-# Bestaande backups en herstel
+# Back-up, restore en continuïteit
 
-De automatische backupvoorziening is al operationeel. Studenten hoeven geen nieuw backupplatform of eigen parallelle backupstack te bouwen. Eigen projectdata kan volgens de bestaande procedure in de backupvoorziening worden opgenomen.
+Een Proxmox-back-up alleen is geen herstelstrategie. De groep bepaalt welke data uniek is, hoe consistent ze wordt opgeslagen en hoe de dienst opnieuw bruikbaar wordt.
 
-## Verwachtingen
+## Classificeer eerst
 
-Documenteer:
+| Type | Voorbeelden | Aanpak |
+|---|---|---|
+| Reproduceerbaar | OS, packages, containerimages | deploymentcode en versiepinning |
+| Configuratie | serviceconfig, workflowexports | Git zonder secrets plus veilige secretprocedure |
+| Unieke data | werelden, database, gebruikersinhoud | goedgekeurde back-up met retentie |
+| Tijdelijk | caches, CI-artifacts, testdata | meestal uitsluiten en automatisch opschonen |
 
-- welke eigen data en configuratie beschermd moeten worden;
-- welke bestaande job, retentie en opslag daarvoor gebruikt worden;
-- verantwoordelijke;
-- restoreprocedure;
-- testresultaten;
-- mislukte tests en verbeteringen.
+## Leg per dienst vast
 
-## Geen installatieopdracht
+- recovery point objective: hoeveel data mag maximaal verloren gaan?
+- recovery time objective: hoe snel moet de dienst terug zijn?
+- back-upmethode, planning, retentie en encryptie;
+- eigenaar en controle op mislukte jobs;
+- afhankelijkheden en volgorde van herstel;
+- locatie van secrets en sleutels;
+- verwijdering bij einde project.
 
-Het opnieuw opzetten van automatische jobs, backupservers of opslag levert geen punten op. Wijzigingen aan de centrale backupvoorziening verlopen via de docent of de afgesproken changeprocedure.
+## Verplichte restoretest
 
-## Mogelijke herstelscope
+Herstel nooit over de enige productie-instantie. Gebruik een aparte VM, database of namespace, valideer functionele data en ruim de test gecontroleerd op. Noteer gemeten duur, dataverlies, problemen en verbeteracties in [backup-test-template.md](templates/backup-test-template.md).
 
-Denk afhankelijk van het gekozen project aan:
-
-- data van de onboarded service;
-- applicatiedata en configuratie;
-- belangrijke VM's/containers;
-- OPNsense-configuratie-export zonder secrets waar mogelijk;
-- documentatie in Git.
-
-## Hersteltest
-
-Gebruik [templates/backup-test-template.md](templates/backup-test-template.md).
-
-Een hersteltest kan worden vastgelegd met:
-
-- startstatus;
-- uitgevoerde stappen;
-- resultaat;
-- screenshots/logs zonder secrets;
-- lessons learned.
+Een snapshot vóór een update is nuttig voor korte rollback, maar geen vervanging voor een onafhankelijke back-up.

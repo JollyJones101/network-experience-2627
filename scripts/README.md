@@ -10,3 +10,10 @@ Regels:
 - gebruik veilige defaults;
 - test scripts voor je ze op belangrijke systemen uitvoert.
 
+Voor scripts die iets wijzigen:
+
+- voorzie waar zinvol een dry-run en bevestigde doelomgeving;
+- stop bij fouten in plaats van blind verder te gaan;
+- schrijf bruikbare logs zonder secrets;
+- documenteer idempotentie, rollback en minimale rechten;
+- laat een groepslid de wijziging reviewen.

@@ -1,34 +1,40 @@
-# Services
+# Services ontwerpen en beheren
 
-Elke service moet bewust gekozen, licht genoeg en professioneel gedocumenteerd zijn.
+De gekozen technologie is een middel, geen projectdoel. Kies de kleinste begrijpelijke architectuur die de Must-eisen betrouwbaar haalt binnen het Smith-budget.
 
-## Projectkeuze
+## Selectiecriteria
 
-De lijst met mogelijke studentenprojecten staat uitsluitend in [backlog.md](../backlog.md). Dit document bevat alleen algemene aandachtspunten voor services.
+Vergelijk voor kritieke componenten:
 
-De reverse proxy, VPN, SSO, NetBox en automatische backupvoorziening zijn al aanwezig en zijn afhankelijkheden, geen extra services die groepen opnieuw installeren.
+- actieve ondersteuning en securityhistoriek;
+- licentie en toegestaan gebruik;
+- resourceverbruik bij normale en piekbelasting;
+- integratiemogelijkheden;
+- authenticatie en rollen;
+- back-up- en exportmogelijkheden;
+- upgradepad en rollback;
+- beheercomplexiteit voor de volgende groep.
 
-## Vermijd zware keuzes
+Leg de beslissing kort vast als Architecture Decision Record of in het projectcharter.
 
-- volledige Kubernetes-clusters;
-- zware Nextcloud-installaties zonder resourcebewijs;
-- meerdere Windows Servers;
-- grote databases;
-- uitgebreide SIEM-stacks;
-- te veel services tegelijk.
+## Per service
 
-## Algemene documentatie per service
+Gebruik [service-template.md](templates/service-template.md) en documenteer:
 
-Gebruik [templates/service-template.md](templates/service-template.md). Beschrijf minstens:
+- doel, eigenaar en gebruikers;
+- versie, bron en updatebeleid;
+- host, resources en netwerkflows;
+- configuratie en deployment zonder secrets;
+- accounts, rollen en dataclassificatie;
+- monitoring, logs en alerts;
+- back-up, restore en rollback;
+- bekende beperkingen en stopprocedure.
 
-- doel;
-- eigenaar;
-- installatie;
-- configuratie;
-- netwerkpad;
-- firewallregels;
-- authenticatie;
-- back-up;
-- monitoring;
-- testprocedure;
-- rollback.
+## Vermijd
+
+- Kubernetes of een zware enterprise-stack alleen voor de technologie;
+- meer componenten dan de groep kan patchen en herstellen;
+- dashboards zonder actie;
+- databases of beheerinterfaces die op alle interfaces luisteren;
+- images met onduidelijke herkomst of een floating latest-tag;
+- één handmatig ingerichte VM waarvan niemand de exacte opbouw kan reproduceren.

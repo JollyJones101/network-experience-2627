@@ -2,45 +2,40 @@
 
 ## Werkwijze
 
-Elke groep gebruikt een eigen clone of fork van deze repository als werkruimte. De repo bevat de vaste layout; jullie vullen zelf de technische documentatie, issues, changelog, diagrammen en bewijsstukken aan.
+Elke groep gebruikt een eigen clone of fork van deze blueprint. De repo is tegelijk projectdossier, technische documentatie en overdrachtspakket. Werk vanaf de eerste week met issues en pull requests; achteraf samengestelde documentatie is zelden betrouwbaar.
 
-De repository is op het einde jullie opleveringsdossier. Behandel ze dus niet als losse notities, maar als professioneel beheerarchief.
+## Gedeelde productieomgeving
 
-## Aanwezigheid en voortgang
+Smith is geen persoonlijke homelabserver. Houd rekening met andere groepen en bestaande diensten:
 
-- Aanwezigheid tijdens contactmomenten wordt verwacht.
-- Elke week moet er zichtbare voortgang zijn in issues, commits of documentatie.
-- Blokkades worden tijdig gemeld via een issue of tijdens het contactmoment.
-- Wacht niet tot de eindweek om documentatie te schrijven.
+- blijf binnen de toegewezen pool, VMID-range, netwerken en resourcequota;
+- maak geen privileged containers tenzij de docent dit uitdrukkelijk goedkeurt;
+- plan belastende tests en onderhoud met de docent;
+- zet ongebruikte test-VM's uit en verwijder ze na goedkeuring;
+- meld onverwachte belasting, kwetsbaarheden en incidenten onmiddellijk;
+- voer geen scans uit buiten de expliciet toegewezen projectscope.
 
-## Groepswerk
+## Groepswerking
 
-- Spreek rollen af, maar zorg dat kennis gedeeld wordt.
-- Minstens twee groepsleden moeten kritieke onderdelen kunnen uitleggen.
-- Verdeel taken via issues.
-- Gebruik pull requests voor betekenisvolle wijzigingen.
-- Noteer in [groepsindeling.md](groepsindeling.md) wie waarvoor verantwoordelijk is.
+- Wijs een primaire en secundaire eigenaar toe voor elk kritisch onderdeel.
+- Laat minstens twee groepsleden elke kernservice kunnen beheren en herstellen.
+- Houd wekelijks een kort statusmoment bij met beslissingen, bewijs en blokkades.
+- Gebruik issues met een eigenaar, deadline en acceptatiecriteria.
+- Laat betekenisvolle wijzigingen reviewen via een pull request.
+- Noteer externe afspraken en toestemmingen in de repo, zonder persoonsgegevens die er niet thuishoren.
 
 ## Rol van de docent
 
-De docent:
+De docent beheert Smith en de gedeelde infrastructuur, keurt risicovolle changes goed, bewaakt capaciteit en veiligheid en helpt bij goed omschreven blokkades. De groep blijft eigenaar van analyse, implementatie, testen, documentatie en eerstelijnsdiagnose van het eigen project.
 
-- beheert de fysieke Proxmoxcluster en de doos-Proxmox;
-- deelt IP-ranges, logins en toegangsmethoden mee;
-- ondersteunt bij blokkades;
-- bewaakt veiligheid en haalbaarheid;
-- beoordeelt technische werking, documentatie en professionele aanpak.
+## Productiechanges
 
-De docent is niet verantwoordelijk voor het oplossen van elke configuratiefout. Eerst analyseren, documenteren en gericht vragen stellen.
+Een wijziging met impact op andere gebruikers, publieke bereikbaarheid, gedeelde infrastructuur of een evenement vereist vooraf een change request. Zie [change-management.md](change-management.md).
 
-## Deadlines
+## Externe communicatie
 
-Exacte deadlines worden door de docent bevestigd. Gebruik [roadmap.md](roadmap.md) als basisplanning en maak issues aan voor concrete taken.
+Communicatie naar alle studenten, personeel, Stuvo of externe deelnemers wordt eerst door de docent of aangeduide verantwoordelijke goedgekeurd. Gebruik geen echte mailinglijsten of persoonsgegevens voor tests.
 
-## Bestaande platformdiensten
+## Deadlines en aanwezigheid
 
-De hardware, automatische backups, reverse proxy, VPN, SSO en NetBox zijn bestaande opleidingsdiensten. Studenten installeren deze niet opnieuw. Ze gebruiken de voorziene aanvraag- en changeprocedures, valideren de werking voor hun eigen services en melden platformproblemen via een supportticket.
-
-## Resourcebewust werken
-
-Elke groep werkt met drie virtuele Proxmox-nodes van ongeveer 8 GB RAM. Kies lichte oplossingen. Documenteer waarom een service haalbaar is binnen jullie omgeving.
+Exacte deadlines worden door de docent bevestigd. De [roadmap](roadmap.md) bevat de standaardplanning. Aanwezigheid tijdens contactmomenten en aantoonbare wekelijkse voortgang worden verwacht.

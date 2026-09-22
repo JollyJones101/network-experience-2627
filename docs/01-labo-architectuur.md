@@ -1,78 +1,44 @@
-# Labo-architectuur
+# Platformarchitectuur
 
-Elke groep werkt in een eigen virtuele bedrijfsomgeving.
+## Context
+
+Alle groepen werken op de gedeelde Proxmox-productienode **Smith**. De opleiding beheert de fysieke host, hypervisor, storage, uplinks en globale netwerkdiensten. Een groep beheert alleen workloads binnen de toegewezen pool.
 
 ```text
-Fysieke Proxmoxcluster opleiding
-└── Doos-Proxmox groep X
-    ├── OPNsense
-    │   ├── WAN
-    │   └── LAN
-    ├── pve-x-01
-    ├── pve-x-02
-    └── pve-x-03
+Gebruikers / campus / eventueel internet
+                  │
+        goedgekeurde netwerkdiensten
+                  │
+                  ▼
+          Proxmox-node Smith
+        ┌─────────┼─────────┐
+        ▼         ▼         ▼
+     pool G1   pool G2   pool G…
+      VM's      VM's      VM's
 ```
 
-## Lagen
+## Verantwoordelijkheidsgrens
 
-| Laag | Beheerder | Doel |
+| Laag | Opleiding | Studentengroep |
 |---|---|---|
-| Fysieke Proxmoxcluster | Docent/opleiding | Draait alle groepsomgevingen |
-| Doos-Proxmox | Docent | Bevat de virtuele labocomponenten van een groep |
-| OPNsense | Opleiding; studenten binnen changeproces | Edge firewall, router, NAT, VPN |
-| Virtuele Proxmox-nodes | Opleiding voor basis; studenten voor eigen workloads | Werkend cluster voor VM's, containers, SDN, HA en firewall |
-| VM's/containers | Studenten | Services en testomgevingen |
+| Fysieke host, Proxmox en storage | beheer, capaciteit, updates | geen wijzigingsrechten |
+| Bridges, VLANs, routing en perimeter | ontwerp en goedkeuring | vereisten documenteren en aanvragen |
+| Proxmox-pool en ACL | toewijzen en auditen | eigen VM's beheren |
+| Gast-OS | noodstop bij risico | installatie, hardening, updates |
+| Applicatie en data | kaders en toezicht | volledige lifecycle |
+| Back-upvoorziening | platform en beleid | eigen data selecteren en restore testen |
+| DNS/reverse proxy/certificaten | gedeelde dienst of goedkeuring | aanvraag, validatie en documentatie |
 
-Studenten krijgen geen beheerrechten op de doos-Proxmox. Dat voorkomt dat groepen de onderliggende bekabeling aanpassen of OPNsense bypassen.
+## Geen impliciete infrastructuur
 
-## Verkeerspad
+De exacte beschikbare VLANs, firewall, VPN, reverse proxy, DNS, back-up en identity provider worden door de docent ingevuld. Een project mag niet aannemen dat een dienst bestaat omdat die in een voorbeeldarchitectuur voorkomt.
 
-Alle beheer- en serviceverkeer moet via OPNsense lopen.
+## Productieprincipes
 
-```text
-WAN/opleidingsnetwerk
-        │
-        ▼
-    OPNsense
-        │ LAN
-        ▼
-Proxmox-cluster en interne services
-```
-
-## IP-placeholders
-
-Exacte IP-ranges worden door de docent bevestigd.
-
-```text
-Groep X LAN:       172.16.X.0/24
-OPNsense LAN:     172.16.X.1
-Proxmox node 1:   172.16.X.11
-Proxmox node 2:   172.16.X.12
-Proxmox node 3:   172.16.X.13
-VPN-range:        <DOOR_DOCENT_BEVESTIGD>
-SDN VNet:         <DOOR_GROEP_TE_KIEZEN>
-```
-
-## Relatie met Proxmox SDN
-
-Maak onderscheid tussen:
-
-- de onderliggende virtuele bekabeling van de docent;
-- het LAN achter OPNsense;
-- Proxmox SDN-netwerken binnen jullie cluster.
-
-Proxmox SDN is een laag binnen jullie eigen cluster. Het vervangt niet de verplichte OPNsense-afscherming.
-
-## Bestaande platformdiensten
-
-Bij de start zijn de Proxmox-basisomgeving, automatische backups, reverse proxy, VPN, SSO en NetBox operationeel. Studenten bouwen deze niet opnieuw. Ze valideren de relevante paden voor hun workloads en gebruiken support- en changeprocedures wanneer de basis afwijkt of aangepast moet worden.
-
-## Validatie van het verkeerspad
-
-Documenteer minstens:
-
-- default gateway van de Proxmox-nodes;
-- traceroute of route-output;
-- relevante OPNsense firewall/NAT-regels of een door de opleiding aangeleverd overzicht;
-- test vanaf WAN/klaslokaalnetwerk naar een gepubliceerde service;
-- screenshot of export zonder secrets.
+- één storing in een groepsproject mag andere groepen niet beïnvloeden;
+- resources krijgen een maximum en worden gemeten;
+- beheerinterfaces zijn niet publiek;
+- netwerktoegang is standaard beperkt;
+- elke tijdelijke VM heeft eigenaar, doel en verwijderdatum;
+- niet-reproduceerbare data heeft een herstelpad;
+- gedeelde changes zijn vooraf goedgekeurd.

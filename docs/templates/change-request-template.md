@@ -8,7 +8,9 @@
 | Aanvrager | `<NAAM>` |
 | Uitvoerder | `<NAAM>` |
 | Geplande datum | `<DATUM>` |
+| Onderhoudsvenster | `<START_EINDE>` |
 | Gekoppeld issue | `<ISSUE>` |
+| Goedkeurder/status | `<ROL_EN_STATUS>` |
 
 ## Doel
 
@@ -34,6 +36,10 @@
 
 `<HOE_DRAAI_JE_TERUG>`
 
+## Communicatie
+
+`<WIE_WORDT_VOOR_TIJDENS_EN_NA_DE_CHANGE_GEINFORMEERD>`
+
 ## Validatie
 
 - [ ] `<TEST>`
@@ -42,4 +48,3 @@
 ## Documentatie-impact
 
 `<WELKE_DOCS_WORDEN_BIJGEWERKT>`
-

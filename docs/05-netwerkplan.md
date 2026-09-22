@@ -1,44 +1,29 @@
-# Netwerkplan
+# Netwerk- en dataflowplan
 
-Vul dit document aan met het echte netwerkplan van jullie groep. Gebruik [templates/netwerkplan-template.md](templates/netwerkplan-template.md) als structuur.
+Vul dit document aan met de echte waarden van de groep. Gebruik het [netwerkplantemplate](templates/netwerkplan-template.md) als start.
 
-## Minimale inhoud
-
-- LAN-subnet;
-- gateway;
-- DNS;
-- DHCP-scope;
-- relevante bestaande VPN-range en toegelaten routes;
-- Proxmox SDN-zone en VNet;
-- VLANs indien gebruikt;
-- firewallzones;
-- firewallregels;
-- beheerinterfaces;
-- services;
-- diagram;
-- testplan.
-
-## Overzicht
+## Platformgegevens
 
 | Onderdeel | Waarde |
 |---|---|
-| Groep | `<GROEP_NUMMER>` |
-| LAN-subnet | `<DOOR_DOCENT_BEVESTIGD>` |
-| Gateway | `<OPNSENSE_LAN_IP>` |
-| DNS | `<DNS_SERVER>` |
-| DHCP-scope | `<SCOPE_OF_NIET_GEBRUIKT>` |
-| VPN-range | `<VPN_RANGE>` |
-| SDN VNet | `<VNET_NAAM_EN_RANGE>` |
+| Proxmox-pool | `<POOL>` |
+| Bridge/VLAN | `<DOOR_DOCENT>` |
+| Subnet/gateway | `<DOOR_DOCENT>` |
+| DNS/NTP | `<DOOR_DOCENT>` |
+| Beheerpad | `<CAMPUS_VPN_OF_ANDERS>` |
+| Publicatiepad | `<INTERN_REVERSE_PROXY_NVT>` |
 
-## Testplan
+## Verplichte inhoud
 
-Voorzie tests voor:
+- logisch architectuurdiagram en trustgrenzen;
+- VM's, interfaces, adressen en DNS-namen;
+- alle inkomende en uitgaande flows;
+- beheer-, monitoring- en back-uppaden;
+- dataclassificatie en opslaglocaties;
+- firewallregels met eigenaar en reden;
+- positieve en negatieve testcases;
+- benodigde changes aan gedeelde infrastructuur.
 
-- LAN-connectiviteit;
-- DNS-resolutie;
-- internet/WAN-bereikbaarheid volgens afspraken;
-- VPN-toegang;
-- publicatie van de gekozen service via de bestaande reverse proxy;
-- automatiserings- en monitoringpaden;
-- Proxmox SDN-connectiviteit;
-- toegelaten en geblokkeerd firewallverkeer.
+## Ontwerpregel
+
+“Het staat op hetzelfde netwerk” is geen securitymodel. Wanneer netwerksegmentatie niet beschikbaar is, documenteer dan welke compensaties gelden: hostfirewall, luisteren op specifieke interfaces, mTLS/TLS, applicatie-authenticatie, aparte serviceaccounts en logging.

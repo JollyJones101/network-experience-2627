@@ -1,55 +1,46 @@
-# Service template
+# Service-template
 
-## Metadata
+## Identiteit
 
 | Veld | Waarde |
 |---|---|
-| Service | `<SERVICE_NAAM>` |
-| Eigenaar | `<NAAM>` |
-| Host | `<HOST>` |
-| Laatst bijgewerkt | `<DATUM>` |
-| Gekoppelde issues | `<ISSUES>` |
+| Service en versie | `<NAAM_VERSIE>` |
+| Doel en gebruikers | `<DOELGROEP>` |
+| Eigenaar/back-up | `<ROLLEN>` |
+| VM(s) | `<VMID_NAMEN>` |
+| Kriticiteit | `<LAAG_MIDDEL_HOOG>` |
 
-## Doel
+## Architectuur
 
-`<WAAROM_BESTAAT_DEZE_SERVICE>`
+`<LINK_NAAR_DIAGRAM_EN_DATAFLOW>`
 
-## Installatie
+## Deployment en configuratie
 
-```text
-<STAPPEN_OF_LINK_NAAR_SCRIPT>
-```
+- Bron/image: `<BETROUWBARE_BRON>`
+- Deployment: `<LINK_NAAR_AUTOMATISERING>`
+- Configuratie: `<LINK_ZONDER_SECRETS>`
+- Secrets: `<VAULTREFERENTIE>`
+- Update/rollback: `<RUNBOOK>`
 
-## Configuratie
+## Netwerk en toegang
 
-Beschrijf instellingen zonder secrets.
+| Bron/rol | Bestemming | Poort | Toegang | Reden |
+|---|---|---:|---|---|
+| `<BRON>` | `<DOEL>` | `<POORT>` | `<ALLOW_DENY>` | `<REDEN>` |
 
-## Netwerkpad
+## Operations
 
-```text
-Client -> bestaande VPN/reverse proxy -> OPNsense -> <SERVICE>
-```
+- SLI/SLO: `<METING_EN_DOEL>`
+- Monitoring/alerts: `<LINK>`
+- Logs/retentie: `<AFSPRAAK>`
+- Back-up/RPO/RTO: `<AFSPRAAK>`
+- Restoretest: `<LINK>`
+- Incidentrunbook: `<LINK>`
 
-## Firewallregels
+## Acceptatie
 
-| Laag | Regel | Reden |
-|---|---|---|
-| OPNsense | `<REGEL>` | `<REDEN>` |
-| Proxmox | `<REGEL>` | `<REDEN>` |
-| Host | `<REGEL>` | `<REDEN>` |
-
-## Authenticatie
-
-- Accountmodel: `<BESCHRIJVING>`
-- Secrets: `<SECRET_IN_BITWARDEN>`
-
-## Backup
-
-`<BACKUP_EN_RESTORE>`
-
-## Testprocedure
-
-- [ ] Bereikbaarheid getest.
-- [ ] Authenticatie getest.
-- [ ] Ongewenste toegang geblokkeerd.
-- [ ] Backup of export getest.
+- [ ] Belangrijkste gebruikersflow werkt.
+- [ ] Rollen en ongewenste toegang zijn getest.
+- [ ] Failure- en herstelpad zijn getest.
+- [ ] Resources blijven binnen budget.
+- [ ] Beheerder buiten het bouwteam kan het runbook volgen.

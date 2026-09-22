@@ -18,6 +18,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: impact
+    attributes:
+      label: Impact en onderhoudsvenster
+      description: Wie kan hinder ondervinden en wanneer wordt de change uitgevoerd?
+    validations:
+      required: true
+  - type: textarea
     id: risk
     attributes:
       label: Risico-inschatting
@@ -46,10 +53,23 @@ body:
     validations:
       required: true
   - type: textarea
+    id: communication
+    attributes:
+      label: Communicatie
+      description: Wie wordt voor, tijdens en na de change geïnformeerd?
+    validations:
+      required: true
+  - type: textarea
     id: docs
     attributes:
       label: Documentatie-impact
       description: Welke documentatie wordt bijgewerkt?
     validations:
       required: true
-
+  - type: checkboxes
+    id: approval
+    attributes:
+      label: Uitvoering
+      options:
+        - label: Ik voer deze change pas uit nadat de vereiste goedkeuring expliciet is geregistreerd.
+          required: true

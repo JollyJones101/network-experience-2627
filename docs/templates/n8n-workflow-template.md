@@ -8,6 +8,7 @@
 | Eigenaar | `<NAAM>` |
 | Trigger | `<TRIGGER>` |
 | Laatst getest | `<DATUM>` |
+| Data-eigenaar | `<ROL>` |
 
 ## Doel
 
@@ -29,6 +30,14 @@
 
 `<WAT_GEBEURT_BIJ_FALEN>`
 
+## Veiligheid en data
+
+- Inputvalidatie: `<CONTROLES>`
+- Idempotentie/deduplicatie: `<AANPAK>`
+- Time-out en retries: `<LIMIETEN>`
+- Persoonsgegevens/retentie: `<DATA_EN_TERMIJN_OF_GEEN>`
+- Stop/disable-procedure: `<RUNBOOK>`
+
 ## Testresultaat
 
 | Test | Verwacht | Resultaat |
@@ -38,4 +47,3 @@
 ## Bewijs
 
 `<SCREENSHOT_OF_EXPORT_ZONDER_SECRETS>`
-
