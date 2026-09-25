@@ -72,7 +72,7 @@
 
 | Naam  | Primaire rol | GitHub-gebruiker |
 | ----- | ------------ | ---------------- |
-| Ewoud | `<ROL>`      | `<githubuser>`   |
+| Ewoud Bouttelisier | `Developer`      | [EwoudBoutje](https://github.com/EwoudBoutje)   |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
@@ -80,17 +80,17 @@
 
 |   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
-| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+| `601` | `n8n-automation-hub` | `n8n hosten` | `<IP>`   | `2 cores` | `16` | `75` | `Ewoud` |
 
 ### Verantwoordelijkheden
 
 | Onderdeel                    | Primair  | Back-up  | Runbook  |
 | ---------------------------- | -------- | -------- | -------- |
-| Platform en deployment       | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Netwerk en security          | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Applicatie en gebruikers     | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Monitoring en herstel        | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Platform en deployment       | `Ewoud` | `<NAAM>` | `<LINK>` |
+| Netwerk en security          | `Ewoud` | `<NAAM>` | `<LINK>` |
+| Applicatie en gebruikers     | `Ewoud` | `<NAAM>` | `<LINK>` |
+| Monitoring en herstel        | `Ewoud` | `<NAAM>` | `<LINK>` |
+| Communicatie en documentatie | `Ewoud` | `<NAAM>` | `<LINK>` |
 
 ---
 
