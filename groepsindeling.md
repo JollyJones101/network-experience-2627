@@ -176,37 +176,37 @@
 
 ### Identiteit
 
-| Veld                          | Waarde                                 |
-| ----------------------------- | -------------------------------------- |
-| Groepsnummer en naam          | Groep 9                                |
-| Project                       | [Studentencloud](09-studentencloud.md) |
-| Repository                    | `<URL>`                                |
-| Product owner / opdrachtgever | `<NAAM_OF_ROL>`                        |
-| Technische coach              | `<DOCENT>`                             |
+| Veld                          | Waarde                                                                  |
+| ----------------------------- | ----------------------------------------------------------------------- |
+| Groepsnummer en naam          | Groep 9                                                                 |
+| Project                       | [Studentencloud](09-studentencloud.md)                                  |
+| Repository                    | [https://github.com/Maxime-00/StudentCloud](https://github.com/Maxime-00/StudentCloud) |
+| Product owner / opdrachtgever | `Mathieu Leroy`                                                         |
+| Technische coach              | `Mathieu Leroy`                                                              |
 
 ### Studenten
 
-| Naam    | Primaire rol | GitHub-gebruiker |
-| ------- | ------------ | ---------------- |
-| Michiel | `<ROL>`      | `<GITHUB>`       |
-| Thorben | `<ROL>`      | `<GITHUB>`       |
-| Maxim   | `<ROL>`      | `<GITHUB>`       |
-| Timo    | `<ROL>`      | `<GITHUB>`       |
+| Naam    | Primaire rol                         | GitHub-gebruiker |
+| ------- | ------------------------------------- | ---------------- |
+| Michiel | `Architect & Project Lead`            | [AtomicXYZ](https://github.com/AtomicXYZ) |
+| Thorben | `Applicatiespecialist`                | [ThorbenAndries](https://github.com/ThorbenAndries) |
+| Maxime  | `Security, Privacy & Backup Engineer` | [Maxime-00](https://github.com/Maxime-00) |
+| Timo    | `Systeem- & Netwerkbeheerder`         | [TimoPlts](https://github.com/TimoPlts) |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
 ### Workloads
 
-|   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
-| -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
-| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+| VMID | Naam            | Functie                                   | IP-adres        | vCPU | RAM   | Disk          | Eigenaar |
+| ---: | --------------- | ----------------------------------------- | --------------- | ---: | ----: | ------------- | -------- |
+| `670` | `studentencloud` | `Studentencloud / filesharingplatform`   | `10.20.254.141` | `2`  | `4 GB` | `32 GB + 200 GB` | `Timo` |
 
 ### Verantwoordelijkheden
 
-| Onderdeel                    | Primair  | Back-up  | Runbook  |
-| ---------------------------- | -------- | -------- | -------- |
-| Platform en deployment       | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Netwerk en security          | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Applicatie en gebruikers     | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Monitoring en herstel        | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
+| Onderdeel                    | Primair   | Back-up   | Runbook |
+| ---------------------------- | --------- | --------- | ------- |
+| Platform en deployment       | `Thorben` | `Timo`    | `<LINK>` |
+| Netwerk en security          | `Timo`    | `Maxime`  | `<LINK>` |
+| Applicatie en gebruikers     | `Thorben` | `Michiel` | `<LINK>` |
+| Monitoring en herstel        | `Maxime`  | `Timo`    | `<LINK>` |
+| Communicatie en documentatie | `Michiel` | `Thorben` | `<LINK>` |
