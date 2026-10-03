@@ -70,22 +70,22 @@
 
 ### Studenten
 
-| Naam  | Primaire rol | GitHub-gebruiker |
-| ----- | ------------ | ---------------- |
-| Ewoud Bouttelisier | `Developer`      | [EwoudBoutje](https://github.com/EwoudBoutje)   |
+| Naam               | Primaire rol | GitHub-gebruiker                              |
+| ------------------ | ------------ | --------------------------------------------- |
+| Ewoud Bouttelisier | `Developer`  | [EwoudBoutje](https://github.com/EwoudBoutje) |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
 ### Workloads
 
-|   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
-| -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
-| `601` | `n8n-automation-hub` | `n8n hosten` | `<IP>`   | `2 cores` | `16` | `75` | `Ewoud` |
+|  VMID | Naam                 | Functie      | IP-adres |      vCPU |  RAM | Disk | Eigenaar |
+| ----: | -------------------- | ------------ | -------- | --------: | ---: | ---: | -------- |
+| `601` | `n8n-automation-hub` | `n8n hosten` | `<IP>`   | `2 cores` | `16` | `75` | `Ewoud`  |
 
 ### Verantwoordelijkheden
 
-| Onderdeel                    | Primair  | Back-up  | Runbook  |
-| ---------------------------- | -------- | -------- | -------- |
+| Onderdeel                    | Primair | Back-up  | Runbook  |
+| ---------------------------- | ------- | -------- | -------- |
 | Platform en deployment       | `Ewoud` | `<NAAM>` | `<LINK>` |
 | Netwerk en security          | `Ewoud` | `<NAAM>` | `<LINK>` |
 | Applicatie en gebruikers     | `Ewoud` | `<NAAM>` | `<LINK>` |
@@ -98,13 +98,13 @@
 
 ### Identiteit
 
-| Veld                          | Waarde                                   |
-| ----------------------------- | ---------------------------------------- |
-| Groepsnummer en naam          | Groep 3                                  |
-| Project                       | [LAN-party van A tot Z](03-lan-party.md) |
-| Repository                    | `<URL>`                                  |
-| Product owner / opdrachtgever | `<NAAM_OF_ROL>`                          |
-| Technische coach              | `<DOCENT>`                               |
+| Veld                          | Waarde                                                            |
+| ----------------------------- | ----------------------------------------------------------------- |
+| Groepsnummer en naam          | Groep 3                                                           |
+| Project                       | [LAN-party van A tot Z](03-lan-party.md)                          |
+| Repository                    | [repository](https://github.com/kyell182/project-3---lanparty-26) |
+| Product owner / opdrachtgever | `<NAAM_OF_ROL>`                                                   |
+| Technische coach              | `<DOCENT>`                                                        |
 
 ### Studenten
 
