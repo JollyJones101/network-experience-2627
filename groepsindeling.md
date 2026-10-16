@@ -22,7 +22,7 @@
 | ----------------------------- | --------------------------------------------------------- |
 | Groepsnummer en naam          | Groep 1                                                   |
 | Project                       | [Minecraft Community Platform](01-minecraft-community.md) |
-| Repository                    | `<URL>`                                                   |
+| Repository                    | `https://github.com/HengdaLin/Minecraft-Server-network-experience-2627`                                                   |
 | Product owner / opdrachtgever | `<NAAM_OF_ROL>`                                           |
 | Technische coach              | `<DOCENT>`                                                |
 
