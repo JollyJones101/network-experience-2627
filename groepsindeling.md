@@ -23,8 +23,7 @@
 | Groepsnummer en naam          | Groep 1                                                   |
 | Project                       | [Minecraft Community Platform](01-minecraft-community.md) |
 | Repository                    | `https://github.com/HengdaLin/Minecraft-Server-network-experience-2627`                                                   |
-| Product owner / opdrachtgever | `<NAAM_OF_ROL>`                                           |
-| Technische coach              | `<DOCENT>`                                                |
+
 
 ### Studenten
 
@@ -38,21 +37,12 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Workloads
+### VM
 
 |   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
 | `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
 
-### Verantwoordelijkheden
-
-| Onderdeel                    | Primair  | Back-up  | Runbook  |
-| ---------------------------- | -------- | -------- | -------- |
-| Platform en deployment       | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Netwerk en security          | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Applicatie en gebruikers     | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Monitoring en herstel        | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
 
 ---
 
@@ -65,8 +55,6 @@
 | Groepsnummer en naam          | Groep 2                                                                                                                  |
 | Project                       | [n8n Automation Hub](02-n8n-automation-hub.md)                                                                           |
 | Repository                    | [https://github.com/EwoudBoutje/network-experience-2627-n8n](https://github.com/EwoudBoutje/network-experience-2627-n8n) |
-| Product owner / opdrachtgever | `<NAAM_OF_ROL>`                                                                                                          |
-| Technische coach              | `<DOCENT>`                                                                                                               |
 
 ### Studenten
 
@@ -76,21 +64,11 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Workloads
+### VM
 
 |  VMID | Naam                 | Functie      | IP-adres |      vCPU |  RAM | Disk | Eigenaar |
 | ----: | -------------------- | ------------ | -------- | --------: | ---: | ---: | -------- |
 | `601` | `n8n-automation-hub` | `n8n hosten` | `<IP>`   | `2 cores` | `16` | `75` | `Ewoud`  |
-
-### Verantwoordelijkheden
-
-| Onderdeel                    | Primair | Back-up  | Runbook  |
-| ---------------------------- | ------- | -------- | -------- |
-| Platform en deployment       | `Ewoud` | `<NAAM>` | `<LINK>` |
-| Netwerk en security          | `Ewoud` | `<NAAM>` | `<LINK>` |
-| Applicatie en gebruikers     | `Ewoud` | `<NAAM>` | `<LINK>` |
-| Monitoring en herstel        | `Ewoud` | `<NAAM>` | `<LINK>` |
-| Communicatie en documentatie | `Ewoud` | `<NAAM>` | `<LINK>` |
 
 ---
 
@@ -103,8 +81,6 @@
 | Groepsnummer en naam          | Groep 3                                                           |
 | Project                       | [LAN-party van A tot Z](03-lan-party.md)                          |
 | Repository                    | [repository](https://github.com/kyell182/project-3---lanparty-26) |
-| Product owner / opdrachtgever | `<NAAM_OF_ROL>`                                                   |
-| Technische coach              | `<DOCENT>`                                                        |
 
 ### Studenten
 
@@ -122,15 +98,6 @@
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
 | `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
 
-### Verantwoordelijkheden
-
-| Onderdeel                    | Primair  | Back-up  | Runbook  |
-| ---------------------------- | -------- | -------- | -------- |
-| Platform en deployment       | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Netwerk en security          | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Applicatie en gebruikers     | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Monitoring en herstel        | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
 
 ---
 
@@ -142,9 +109,8 @@
 | ----------------------------- | ---------------------------------------------------------- |
 | Groepsnummer en naam          | Groep 8                                                    |
 | Project                       | [Game Server as a Service](08-game-server-platform.md)     |
-| Repository                    | `<https://github.com/JollyJones101/gameserver-management>` |
+| Repository                    | `https://github.com/HengdaLin/Minecraft-Server-network-experience-2627/tree/master` |
 | Product owner / opdrachtgever | `Mathieu Leroy`                                            |
-| Technische coach              | `<Mathieu Leroy>`                                          |
 
 ### Studenten
 
@@ -154,21 +120,12 @@
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
-### Workloads
+### VM
 
 |   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
 | `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
 
-### Verantwoordelijkheden
-
-| Onderdeel                    | Primair  | Back-up  | Runbook  |
-| ---------------------------- | -------- | -------- | -------- |
-| Platform en deployment       | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Netwerk en security          | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Applicatie en gebruikers     | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Monitoring en herstel        | `<NAAM>` | `<NAAM>` | `<LINK>` |
-| Communicatie en documentatie | `<NAAM>` | `<NAAM>` | `<LINK>` |
 
 ---
 
@@ -181,8 +138,7 @@
 | Groepsnummer en naam          | Groep 9                                                                 |
 | Project                       | [Studentencloud](09-studentencloud.md)                                  |
 | Repository                    | [https://github.com/Maxime-00/StudentCloud](https://github.com/Maxime-00/StudentCloud) |
-| Product owner / opdrachtgever | `Mathieu Leroy`                                                         |
-| Technische coach              | `Mathieu Leroy`                                                              |
+| Product owner / opdrachtgever | `Mathieu Leroy`                                                         |                      
 
 ### Studenten
 
