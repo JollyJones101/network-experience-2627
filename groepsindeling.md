@@ -218,8 +218,8 @@
 
 |   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar | Notes |
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- | ------|
-| `101` | `Authentik` | `Authentik services` | `10.50.0.10`   | `2` | `1.50/3.00` | `20` | `HengdaLin` | `Draait op Laptop Thuis` |
-| `102` | `Netbird` | `Netbird services` | `10.50.0.11`   | `2` | `1.00/2.00` | `20` | `HengdaLin` | `Draait op Laptop Thuis` |
+| `101` | `Authentik` | `Authentik services` | `10.50.0.10`   | `2` | `1.50/3.00` | `20` | `HengdaLin` | `Draait op Laptop Thuis Netwerk bereikbaar via Tailscale` |
+| `102` | `Netbird` | `Netbird services` | `10.50.0.11`   | `2` | `1.00/2.00` | `20` | `HengdaLin` | `Draait op Laptop Thuis Netwerk bereikbaar via Tailscale` |
 
 ---
 
