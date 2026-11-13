@@ -98,6 +98,32 @@
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
 | `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
 
+---
+
+## Groep 6 - Cyber Range CTF
+
+### Identiteit
+
+| Veld                          | Waarde                                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Groepsnummer en naam          | Groep 6                                                                                                                  |
+| Project                       | [Cyber Range CTF](06-cyber-range-ctf.md)                                                                                 |
+| Repository                    | [https://github.com/JulesDeclercq/CyberRangeCTF](https://github.com/JulesDeclercq/CyberRangeCTF)                         |
+
+### Studenten
+
+| Naam           | Primaire rol | GitHub-gebruiker                                  |
+| -------------- | ------------ | ------------------------------------------------- |
+| Simon Moyaert  | `Developer`  | [simon-moyaert](https://github.com/simon-moyaert) |
+| Jules Declercq | `Developer`  | [JulesDeclercq](https://github.com/JulesDeclercq) |
+
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
+
+### VM
+
+|  VMID | Naam              | Functie      | IP-adres |      vCPU |  RAM | Disk | Eigenaar |
+| ----: | ----------------- | ------------ | -------- | --------: | ---: | ---: | -------- |
+| `650` | `cyber-range-ctf` | `ctf hosten` | `<IP>`   | `2 cores` | `8`  | `16` | `Simon`  |
 
 ---
 
