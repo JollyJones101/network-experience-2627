@@ -201,7 +201,7 @@
 | Veld                          | Waarde                                                    |
 | ----------------------------- | --------------------------------------------------------- |
 | Groepsnummer en naam          | Groep 10                                                  |
-| Project                       | [Authentik-Netbird]() |
+| Project                       | [Authentik-Netbird](projecten/11-Netbird-Authentik.md) |
 | Repository                    | [Netbird-Authentik-network-experience-2627](https://github.com/HengdaLin/Netbird-Authentik-network-experience-2627)                                                   |
 
 
