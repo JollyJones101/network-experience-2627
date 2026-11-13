@@ -29,11 +29,11 @@
 
 | Naam   | Primaire rol | GitHub-gebruiker |
 | ------ | ------------ | ---------------- |
-| Bram   | `<ROL>`      | `<GITHUB>`       |
-| Kevin  | `<ROL>`      | `<GITHUB>`       |
-| Xander | `<ROL>`      | `<GITHUB>`       |
-| Hengda | `<ROL>`      | `<GITHUB>`       |
-| Miel   | `<ROL>`      | `<GITHUB>`       |
+| Bram   | `builder & admin`      | `[BramDeBevere](https://github.com/BramDeBevere)`       |
+| Kevin  | `Spawn & VM & testing`      | `[KevinBakeland](https://github.com/KevinBakeland)`       |
+| Xander | `chunky plugin & testing`      | `[Sha88y](https://github.com/Sha88y)`       |
+| Hengda | `Plugins & Permissions`      | `[HengdaLin](https://github.com/HengdaLin)`       |
+| Miel   | `Proxmox Server & Pterodactyl & testing`      | `[Miel-Villyn](https://github.com/Miel-VIllyn)`       |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
 
@@ -41,7 +41,7 @@
 
 |   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
-| `<ID>` | `<NAAM>` | `<FUNCTIE>` | `<IP>`   | `<N>` | `<GB>` | `<GB>` | `<NAAM>` |
+| `666` | `MinecraftT` | `MC Server` | `10.20.203.28`   | `6` | `23.44GiB` | `100` | `<NAAM>` |
 
 
 ---
