@@ -195,7 +195,7 @@
 
 ---
 
-## Groep 10 - Authentik Netbird
+## Groep 11 - Authentik Netbird
 ### Identiteit
 
 | Veld                          | Waarde                                                    |
