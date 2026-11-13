@@ -192,3 +192,34 @@
 | Applicatie en gebruikers     | `Thorben` | `Michiel` | `<LINK>` |
 | Monitoring en herstel        | `Maxime`  | `Timo`    | `<LINK>` |
 | Communicatie en documentatie | `Michiel` | `Thorben` | `<LINK>` |
+
+---
+
+## Groep 10 - Authentik Netbird
+### Identiteit
+
+| Veld                          | Waarde                                                    |
+| ----------------------------- | --------------------------------------------------------- |
+| Groepsnummer en naam          | Groep 10                                                  |
+| Project                       | [Authentik-Netbird]() |
+| Repository                    | [Netbird-Authentik-network-experience-2627](https://github.com/HengdaLin/Netbird-Authentik-network-experience-2627)                                                   |
+
+
+### Studenten
+
+| Naam   | Primaire rol | GitHub-gebruiker |
+| ------ | ------------ | ---------------- |
+| Hengda | `Proxmox & VM's & Tailscale Install/Setup `      | [HengdaLin](https://github.com/HengdaLin)       |
+| Jamie   | `Netbird & Authentik Install`      | [JollyJones101](https://github.com/JollyJones101)       |
+
+> Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
+
+### VM
+
+|   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar | Notes |
+| -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- | ------|
+| `101` | `Authentik` | `Authentik services` | `10.50.0.10`   | `2` | `1.50/3.00` | `20` | `HengdaLin` | `Draait op Laptop Thuis` |
+| `102` | `Netbird` | `Netbird services` | `10.50.0.11`   | `2` | `1.00/2.00` | `20` | `HengdaLin` | `Draait op Laptop Thuis` |
+
+---
+
