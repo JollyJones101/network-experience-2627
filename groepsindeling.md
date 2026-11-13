@@ -41,7 +41,7 @@
 
 |   VMID | Naam     | Functie     | IP-adres |  vCPU |    RAM |   Disk | Eigenaar |
 | -----: | -------- | ----------- | -------- | ----: | -----: | -----: | -------- |
-| `666` | `MinecraftT` | `MC Server` | `10.20.203.28`   | `6` | `23.44GiB` | `100` | `Leroy` |
+| `666` | `MinecraftT` | `MC Server` | `10.20.203.28`   | `6` | `23.44` | `100` | `Leroy` |
 
 
 ---
