@@ -114,7 +114,7 @@
 
 | Naam           | Primaire rol | GitHub-gebruiker                                  |
 | -------------- | ------------ | ------------------------------------------------- |
-| Simon Moyaert  | `Developer`  | [simon-moyaert](https://github.com/simon-moyaert) |
+| Simon Moyaert  | `Developer`  | [simon_moyaert](https://github.com/simon_moyaert) |
 | Jules Declercq | `Developer`  | [JulesDeclercq](https://github.com/JulesDeclercq) |
 
 > Rollen zijn verantwoordelijkheden, geen taakmuren. Iedereen moet het totaalontwerp kunnen uitleggen.
