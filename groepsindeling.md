@@ -21,7 +21,7 @@
 | Veld                          | Waarde                                                    |
 | ----------------------------- | --------------------------------------------------------- |
 | Groepsnummer en naam          | Groep 1                                                   |
-| Project                       | [Minecraft Community Platform](01-minecraft-community.md) |
+| Project                       | [Minecraft Community Platform](projecten/01-minecraft-community.md) |
 | Repository                    | [Minecraft-Server-network-experience-2627](https://github.com/HengdaLin/Minecraft-Server-network-experience-2627)                                                   |
 
 
